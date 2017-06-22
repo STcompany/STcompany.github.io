@@ -1,0 +1,58 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+//First screen styles
+.main_head
+  height: 100vh
+  position: relative
+  background-color: $grey
+  padding: 1px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  .container
+    .headwrap
+      h2
+        text-transform: uppercase
+        font-size: 14px
+      >h3
+        font-size: 24px
+        margin-top: 15px
+        font-family: UbuntuLight, sans-serif
+      .form_wrap
+        margin-top: 170px
+        h3
+          margin-top: 30px
+        form
+          display: flex
+          justify-content: center
+          input
+            max-width: 200px
+            font-size: 16px
+            transition: all .4s ease
+            padding: 10px 15px
+            border: none
+            border-right: 1px solid $grey
+            &::placeholder
+              color: $light-grey
+            &:focus,:active
+              outline: none
+              background-color: $light_grey
+          #submit
+            background-color: $accent
+            color: #ffffff
+            &:hover
+              background-color: darken($accent, 15%)
+
+
+
+
+
+
+
+
+
+
+
+
