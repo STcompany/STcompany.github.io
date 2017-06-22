@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Bootstrap (latest) Grid Styles Only -->
+	<style></style>
+
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>@@include('header.min.css')</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS End -->
+
+	<!-- Load Custom CSS Start -->
+	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS End -->
+
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS End -->
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+<header class="main_head">
+	<div class="container">
+		<div class="headwrap">
+			<h2>кафедра инженерии программного обеспечения</h2>
+			<h1>Черноморского национального университета <br> им. Петра Могилы</h1>
+			<h3>created by <span>SmartTechTeam</span> for <span>CashCode 2017</span></h3>
+			<div class="form_wrap">
+				<form action="#">
+					<label for="name"></label>
+					<label for="email"></label>
+					<label for="submit"></label>
+					<input type="text" name="name" id="name" placeholder="Ваше имя..." required>
+					<input type="email" name="email" id="email" placeholder="Ваш e-mail..." required>
+					<input type="submit" name="submit" id="submit" value="Подписаться »">
+				</form>
+				<h3>Будь в курсе <span>всех</span> событий!</h3>
+			</div>
+		</div>
+	</div>
+</header><!-- header -->
+<section class="sect1">      <!-- section 1 -->
+	<div class="topline">
+		<div class="container">
+		<div class="mnu-wrap">
+			<div class="logo"></div>
+			<nav class="main-mnu">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Преподаватели</a></li>
+					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Наука</a></li>
+					<li><a href="#">Новости</a></li>
+					<li>
+						<a>Обьявления</a>
+						<ul>
+							<li><a href="#">Срочные</a></li>
+							<li><a href="#">Важные</a></li>
+							<li><a href="#">Работа</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="burger-wrap">
+				<button class="hamburger hamburger--elastic" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+				</button>
+			</div>
+			<div class="icons_awesome">
+				<i class="fa fa-facebook" style="color: #354a7a" aria-hidden="true"></i>
+				<i class="fa fa-twitter" style="color: #0792c7" aria-hidden="true"></i>
+				<i class="fa fa-ellipsis-h open_more" aria-hidden="true"></i>
+				<div class="ul_icons_wrap">
+					<ul>
+						<li><i class="fa fa-dribbble" style="color: #ab406b" aria-hidden="true"></i></li>
+						<li><i class="fa fa-behance" style="color: #1a5cd6" aria-hidden="true"></i></li>
+						<li><i class="fa fa-pinterest" style="color: #a94136" aria-hidden="true"></i></li>
+						<li><i class="fa fa-google-plus" style="color: #076a9b" aria-hidden="true"></i></li>
+						<li><i class="fa fa-camera-retro" style="color: #486e8d" aria-hidden="true"></i></li>
+						<li><i class="fa fa-linkedin-square" style="color: #0c6390" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div><!-- topline -->
+	<div class="container_items">
+		<div class="wrap_h_items">
+			<div class="img_phones"></div>
+			<div class="wrap_h2"><h2><span>Новости</span> и обьявления</h2></div>
+			<div class="wrap_nav_items">
+				<ul>
+					<li><a href="#">Все</a></li>
+					<li><a href="#">Конкурсы</a></li>
+					<li><a href="#">Срочные обьявления</a></li>
+					<li><a href="#">Работа</a></li>
+				</ul>
+			</div>
+			<div class="wrap_items">
+				<div class="item" style="background-image: url(img/olvia.jpg)">
+					<div class="text_wrap">
+						<div class="text">
+							<h4><span>Ольвийский</span> форум</h4>
+							<p>8 <span>червня</span> з 10:00</p>
+							<p><span>Читальна</span> зала</p>
+							<p><a href="#">Узнать <span>больше...</span></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(img/cashcode.png">
+					<div class="text_wrap">
+						<div class="text">
+							<h4><span>Ольвийский</span> форум</h4>
+							<p>8 <span>червня</span> з 10:00</p>
+							<p><span>Читальна</span> зала</p>
+							<p><a href="#">Узнать <span>больше...</span></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(img/cubomania.jpg)">
+					<div class="text_wrap">
+						<div class="text">
+							<h4><span>Ольвийский</span> форум</h4>
+							<p>8 <span>червня</span> з 10:00</p>
+							<p><span>Читальна</span> зала</p>
+							<p><a href="#">Узнать <span>больше...</span></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(img/den_fkn.jpg)">
+					<div class="text_wrap">
+						<div class="text">
+							<h4><span>Ольвийский</span> форум</h4>
+							<p>8 <span>червня</span> з 10:00</p>
+							<p><span>Читальна</span> зала</p>
+							<p><a href="#">Узнать <span>больше...</span></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(img/mr.uni.jpg)">
+					<div class="text_wrap">
+						<div class="text">
+							<h4><span>Ольвийский</span> форум</h4>
+							<p>8 <span>червня</span> з 10:00</p>
+							<p><span>Читальна</span> зала</p>
+							<p><a href="#">Узнать <span>больше...</span></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(img/8_march.jpg)">
+					<div class="text_wrap">
+						<div class="text">
+							<h4><span>Ольвийский</span> форум</h4>
+							<p>8 <span>червня</span> з 10:00</p>
+							<p><span>Читальна</span> зала</p>
+							<p><a href="#">Узнать <span>больше...</span></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(img/den_europa.jpg)">
+					<div class="text_wrap">
+						<div class="text">
+							<h4><span>Ольвийский</span> форум</h4>
+							<p>8 <span>червня</span> з 10:00</p>
+							<p><span>Читальна</span> зала</p>
+							<p><a href="#">Узнать <span>больше...</span></a></p>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(img/miss.jpg)">
+					<div class="text_wrap">
+						<div class="text">
+							<h4><span>Ольвийский</span> форум</h4>
+							<p>8 <span>червня</span> з 10:00</p>
+							<p><span>Читальна</span> зала</p>
+							<p><a href="#">Узнать <span>больше...</span></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- container items -->
+</section>
+	<!-- Custom HTML -->
+
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS End -->
+
+</body>
+</html>
