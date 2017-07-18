@@ -104,7 +104,7 @@ header
     :nth-child(1)
       left: 0
     :nth-child(2)
-      font-size: 25px
+      font-size: 23px
       position: relative
       display: inline-block
       line-height: 25px
@@ -211,6 +211,38 @@ header
         box-shadow: inset 0 1px 1px rgba(83, 167, 236, 0.075), 0 0 8px rgba(83, 167, 236, 0.8)
         border-color: rgba(83, 167, 236, 0.075)
 
+.magnific_form
+  background-color: #fff
+  color: #000
+  max-width: 300px
+  padding: 40px 15px
+  text-align: center
+  border-radius: 10px
+  margin: 0 auto
+  h2
+    font-size: 20px
+    line-height: 22px
+  p
+    font-size: 17px
+    line-height: 18px
+    margin: 15px 0
+  input
+    display: block
+    padding: 15px 10px
+    border-radius: 5px
+    border: 1px solid #000
+    box-shadow: none
+    margin: 10px auto
+    font-size: 18px
+    line-height: 20px
+    transition: all .7s ease-in-out
+    &:active, &:focus
+      box-shadow: inset 0 1px 1px rgba(83, 167, 236, 0.075), 0 0 8px rgba(83, 167, 236, 0.8)
+      border-color: rgba(83, 167, 236, 0.075)
+
+.mfp-close-btn-in .mfp-close
+  color: #fff
+  background-color: rgba(0, 0, 0, .6)
 
 .head_form_button
   p
@@ -230,7 +262,7 @@ header
   font-size: 16px
   line-height: 18px
   background-color: darken($act-color, 10%)
-  display: inline-block
+  display: none
   text-align: center
   margin: 25px auto 0
   border-radius: 10px
@@ -336,19 +368,24 @@ header
   .head_row_1 .item
     margin: 10px 25px
 
-@media only screen and (max-width : 729px)
-  .head_row_1 .item
-    font-size: 14px
-    line-height: 16px
+@media only screen and (max-width : 790px)
+  .head_container
+    padding: 15px
 
 @media only screen and (max-width : 769px)
   .row_2_form
     display: none
+  .magnific_button
+    display: inline-block
 
+@media only screen and (max-width : 729px)
+  .head_row_1 .item
+    font-size: 14px
+    line-height: 16px
 
 @media only screen and (max-width : 480px)
   .head_row_2
     .row_2_text
       font-size: 30px
       ul
-        font-size: 16px
+        display: none
