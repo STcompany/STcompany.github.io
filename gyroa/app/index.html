@@ -1,0 +1,2740 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Template Basic Images End -->
+
+    
+    <!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+    <style>@
+    @include ('header.min.css')</style>
+
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    <script>!function (e) {
+        "use strict";
+        function t(e, t, n) {
+            e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
+        };
+        function n(t, n) {
+            return e.localStorage && localStorage[t + "_content"] && localStorage[t + "_file"] === n
+        };
+        function a(t, a) {
+            if (e.localStorage && e.XMLHttpRequest)n(t, a) ? o(localStorage[t + "_content"]) : l(t, a); else {
+                var s = r.createElement("link");
+                s.href = a, s.id = t, s.rel = "stylesheet", s.type = "text/css", r.getElementsByTagName("head")[0].appendChild(s), r.cookie = t
+            }
+        }
+
+        function l(e, t) {
+            var n = new XMLHttpRequest;
+            n.open("GET", t, !0), n.onreadystatechange = function () {
+                4 === n.readyState && 200 === n.status && (o(n.responseText), localStorage[e + "_content"] = n.responseText, localStorage[e + "_file"] = t)
+            }, n.send()
+        }
+
+        function o(e) {
+            var t = r.createElement("style");
+            t.setAttribute("type", "text/css"), r.getElementsByTagName("head")[0].appendChild(t), t.styleSheet ? t.styleSheet.cssText = e : t.innerHTML = e
+        }
+
+        var r = e.document;
+        e.loadCSS = function (e, t, n) {
+            var a, l = r.createElement("link");
+            if (t)a = t; else {
+                var o;
+                o = r.querySelectorAll ? r.querySelectorAll("style,link[rel=stylesheet],script") : (r.body || r.getElementsByTagName("head")[0]).childNodes, a = o[o.length - 1]
+            }
+            var s = r.styleSheets;
+            l.rel = "stylesheet", l.href = e, l.media = "only x", a.parentNode.insertBefore(l, t ? a : a.nextSibling);
+            var c = function (e) {
+                for (var t = l.href, n = s.length; n--;)if (s[n].href === t)return e();
+                setTimeout(function () {
+                    c(e)
+                })
+            };
+            return l.onloadcssdefined = c, c(function () {
+                l.media = n || "all"
+            }), l
+        }, e.loadLocalStorageCSS = function (l, o) {
+            n(l, o) || r.cookie.indexOf(l) > -1 ? a(l, o) : t(e, "load", function () {
+                a(l, o)
+            })
+        }
+    }(this);</script>
+
+    <!-- Load Fonts CSS Start -->
+    <script>
+        loadCSS("css/fonts.min.css?ver=1.0.0", false, "all"); // Loading fonts, if the site is located in a subfolder
+        // loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+    </script>
+    <!-- Load Fonts CSS End -->
+
+    <!-- Load Custom CSS Start -->
+    <!--<Deject>-->
+    <script>loadCSS("header.min.css?ver=1.0.0", false, "all");</script>
+    <!--</Deject>-->
+    <script>loadCSS("css/main.min.css?ver=1.0.0", false, "all");</script>
+    <!-- Load Custom CSS End -->
+
+    <!-- Load Custom CSS Compiled without JS Start -->
+    <noscript>
+        <link rel="stylesheet" href="css/fonts.min.css">
+        <link rel="stylesheet" href="css/main.min.css">
+    </noscript>
+    <!-- Load Custom CSS Compiled without JS End -->
+
+    <!-- Custom Browsers Color Start -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+
+<!--Google Tag Manager (noscript)-->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWWM48C" height=0 width=0
+            style=display:none;visibility:hidden></iframe>
+</noscript>
+<!--End Google Tag Manager (noscript)-->
+<!--Шапка-->
+<div class="container_topline">
+    <div class="topline">
+        <ul class="menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Инструкция</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Аксессуары</a></li>
+            <li><a href="#">Производство</a></li>
+            <li><a href="#">Особенности конструкции</a></li>
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">Гироскутеры оптом</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="sandv-wrap">
+            <button class="nav-trigger">
+                <span></span>
+            </button>
+        </div>
+        <nav class="mob_menu">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Инструкция</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="#">Производство</a></li>
+                <li><a href="#">Особенности конструкции</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Гироскутеры оптом</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<header>
+    <!--   <video id="background_video" loop="loop" muted="muted" autoplay="autoplay">
+        <source src="img/giroscooter.mp4" type="video/mp4">
+    </video>  -->
+    <div id="video-bg" class="wrap_for_video">
+        <video width="100%" height="auto" preload="auto" autoplay="autoplay"
+               loop="loop" poster="bg/daisy-stock-poster.jpg">
+            <source src="img/giroscooter.mp4" type="video/mp4">
+        </video>
+        <div class="head_container">
+            <div class="wrapper">
+                <div class="head_row_1">
+                    <div class="item">
+                        <h3>girogo.com.ua</h3>
+                        <p>Интернет-магазин гироскутеров <br/>Работаем по всей Украине</p>
+                    </div>
+                    <div class="item">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        <p class="center-item">Бесплатная доставка <br/>по Украине 1-3 дня</p>
+                        <p>По Киеву в течение часа</p>
+                    </div>
+                    <div class="item right_item">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        <p><a href="tel:">+380634463065</a></p>
+                        <p><a href="#" class="phone_button">Заказать обратный звонок</a></p>
+                    </div>
+                </div>
+                <div class="head_row_2">
+                    <div class="row_2_text">
+                        <p>ОРИГИНАЛЬНЫЕ <br/><span>ГИРОСКУТЕРЫ</span><br/> ПРЕМИУМ КАЧЕСТВА <br/><span>от 5 500 грн.</span> В УКРАИНЕ</p>
+                        <ul>
+                            <li>с приложением для iOS и Android</li>
+                            <li>расширенная гарантия 2 года</li>
+                            <li>фирменный аккумулятор Samsung</li>
+                        </ul>
+                    </div>
+                    <div class="row_2_form">
+                        <form name="form">
+                            <h2>ПОЛУЧИТЕ ПРЯМО СЕЙЧАС</h2>
+                            <p>купон 500 грн. на первую покупку и подарок сумку стоимостью 400 грн.</p>
+                            <input type="text" name="name" placeholder="Введите имя">
+                            <input type="text" name="name" placeholder="Введите телефон" id="phone">
+                            <a href="#" class="head_form_button"><p>Получите купон в подарок!</p></a>
+                            <p>Наши менеджеры свяжутся с вами в течение 15 минут для консультации</p>
+                        </form>
+                    </div>
+                </div>
+                <a href="#popup_form" class="magnific_button">Получите прямо сейчас!</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="pr" class="template landingItem">
+    <div class="wrap">
+        <div class="inline-row t-center bx-animate">
+            <div class="pr-block bx-animate-item"><img src="img/pr/track.png">
+
+                <div class="plank">
+                    <div class="header">Доставка по Украине</div>
+                    <p>Доставляем до ближайешего<br> отделения Новой почты!</p></div>
+            </div>
+            <div class="pr-block bx-animate-item"><img src="img/pr/2-min.png">
+
+                <div class="plank">
+                    <div class="header">Легкость покупки!</div>
+                    <p>Оплата при получения или перевод на карту!<br>Отправка гироскутера в день заказа!<br>Техническая
+                        помощь при выборе!</p></div>
+            </div>
+            <div class="pr-block bx-animate-item"><img src="img/pr/3-min.png">
+
+                <div class="plank">
+                    <div class="header">Гарантия 1 год!</div>
+                    <p>На все гироскутеры устанавливается<br>гарантия 12 месяцев со дня продажи.<br>Гарантия
+                        распространяется на все его внутренние части.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="manual" class="template black-bg landingItem">
+    <div class="wrap"><h2 class="title t-center"><span class="big">Гироскутер</span> транспорт будущего</h2>
+
+        <div class="row">
+            <div class="cell bx-animate">
+                <div class="future-block bx-animate-item"><p>Чтобы начать движение, следует наклонить корпус вперед и
+                    надавить передней частью ступни на педали гироскутера - и чем сильнее, тем быстрее будет
+                    скорость.</p></div>
+                <div class="future-block bx-animate-item"><p>Для движения назад или остановки, необходимо перенести вес
+                    с носка на пятку и отклонить корпус назад.</p></div>
+            </div>
+            <div class="cell bx-animate">
+                <div class="future-block bx-animate-item"><p>Для поворота влево нужно переместить вес тела на правое
+                    колесо.</p></div>
+                <div class="future-block bx-animate-item"><p>Для поворота вправо нужно переместить вес тела на левое
+                    колесо.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="mp-block" class="template">
+    <div class="wrap">
+        <div class="row">
+            <div class="cell">
+                <div id="move-to-h"></div>
+                <img src="img/map-kiev.png"></div>
+            <div class="cell"><h2 class="title" id="move-h">Запас хода до 20 км</h2>
+
+                <p>Высокоемкий аккумулятор позволит преодолеть расстояние до 20 км. Например, если вы в Киеве, вы с
+                    легкостью доберетесь от станции метро "Васильковская" до станции метро "Героев Днепра" с ветерком и
+                    без пробок.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="speed" class="template black-bg">
+    <div class="wrap">
+        <div class="row">
+            <div class="cell"><h2 class="title">Скорость<br>до 20 км/ч</h2>
+
+                <div id="img-here"></div>
+                <p>В среднем гироскутер развивает скорость до 20 км/ч, может подниматься в гору под углом 30 градусов,
+                    ловко поворачивать и разворачиваться.</p></div>
+            <div class="cell t-right"><img src="img/speed-min.png" id="move-img"></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="blue-line template first" id="user_manual">
+    <div class="wrap">
+        <div class="inline-row"><p class="info">Получить инструкцию по эксплуатации</p>
+
+            <form class="subform" id="first-blue" name="request-form">
+                <div class="bg-input hidden"><input type="text" name="address" placeholder="Введите Ваш адрес"></div>
+                <div class="bg-inp"><input type="text" class="requaired" name="mail" placeholder="Введите Ваш e-mail"
+                                           title="Введите адрес электронной почты в формате email@email.ru"
+                                           pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+                                           required="required"></div>
+                <input type="hidden" name="type" value="Инструкция"> <input type="hidden" name="action" value="instruction">
+                <button type="submit" class="img-button blue-block">Получить</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="baby" class="template">
+    <div class="wrap t-center"><h2 class="title">Подари ребёнку <span>счастье!</span></h2>
+
+        <div class="clear-row">
+            <div class="left">
+                <div class="bl-1"><span><span id="ball">0%</span> детей</span> повысили свой средний балл в школе!</div>
+                <div class="bl-2">Проезжает по ямам и траве</div>
+                <div class="bl-3">Развивает координацию на 34%</div>
+            </div>
+            <div class="left for_girl_img"><img src="img/baby.png"></div>
+            <div class="left">
+                <div class="bl-4">Справится даже 5-ти летний</div>
+                <div class="bl-5">Ваш ребёнок в центре внимания</div>
+                <div class="bl-6">Заменит телефон и планшет</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="catalog" class="template landingItem black-bg">
+    <div class="wrap"><h2 class="title t-center"><span class="big">Каталог</span><br>выбери одну из 10 моделей</h2>
+
+        <div id="gotonav"></div>
+        <div class="slider">
+            <div class="cat-for">
+                <script type="text/javascript">
+                    var itemsColorGalleryImages = {};
+                </script>
+                <div class="item active">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Smart Balance U3 - 6,5"</h3>
+
+                                <p class="inf">Самая доступная модель с беспроводными колонками и прорезиненным корпусом.
+                                    Катайтесь по ровным поверхностям с полным комфортом!</p></div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876542/876542_1.jpg" data-caption="Гироскутеры Харьков 2017"><img
+                                    src="img/catalog/876542/876542_0.png" class="active" alt="Smart Balance U3"></a>
+                            </figure>
+                            <a class="podrb podrb_video" href="#catalog_video" data-modal=""
+                               data-video-url="h0F_YxKzF6k"><img src="img/podrb_video.png"></a> <a class="podrb"
+                                                                                                   href="javascript: void(0);"
+                                                                                                   data-lightbox=""
+                                                                                                   data-src="img/catalog/876542/876542_1.jpg"
+                                                                                                   data-caption="Гироскутеры Харьков 2017"><img
+                                src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 18 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>10,5 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>6,5 дюймов (16,5 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/music.png"></figure>
+                                    <p><span class="bold">Музыка: </span>Bluetooth 4.0 колонка</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>Габаритные огни</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-120 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>700W (2x350W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Аккумулятор: </span>SAMSUNG Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>580x190x180</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">Синий</span></p></li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active" style="background-color: #053cb9;"
+                                             data-src="img/catalog/876542/876542_0.png"
+                                             data-articul="876542"
+                                             data-name="u3_blue_carbon" data-title="Синий">
+
+                                        </div>
+                                        <div class="color-ball" style="background-color:#93182b;"
+                                             data-src="img/catalog/876540/876540_0.png"
+                                             data-articul="876540"
+                                             data-name="u3_red"
+                                             data-title="Красный">
+
+                                        </div>
+                                        <div class="color-ball"
+                                             style="background-color: #1f1e21; border: 1px solid #545454;"
+                                             data-src="img/catalog/876541/876541_0.png"
+                                             data-articul="876541"
+                                             data-name="u3_black" data-title=Черный>
+
+                                        </div>
+                                        <div class="color-ball" style="background-color:silver;"
+                                             data-src="img/catalog/876543/876543_0.png"
+                                             data-articul="876543"
+                                             data-name="u3_silver"
+                                             data-title="Silver (хром)">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">5 399 грн.</div>
+                                <div class="price left">4 850 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="876542">Заказать</a></div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["u3_blue_carbon"] = {};
+                    itemsColorGalleryImages["u3_blue_carbon"].main = "img/catalog/876542/876542_0.png";
+                    itemsColorGalleryImages["u3_blue_carbon"].gallery = [];
+                    itemsColorGalleryImages["u3_blue_carbon"].gallery.push("img/catalog/876542/876542_1.jpg");
+                    itemsColorGalleryImages["u3_blue_carbon"].gallery.push("img/catalog/876542/876542_2.jpg");
+                    itemsColorGalleryImages["u3_blue_carbon"].gallery.push("img/catalog/876542/876542_3.jpg");
+                    itemsColorGalleryImages["u3_blue_carbon"].gallery.push("img/catalog/876542/876542_4.jpg");
+                    itemsColorGalleryImages["u3_blue_carbon"].gallery.push("img/catalog/876542/876542_5.jpg");
+
+                    itemsColorGalleryImages["u3_red"] = {};
+                    itemsColorGalleryImages["u3_red"].main = "img/catalog/876540/876540.png";
+                    itemsColorGalleryImages["u3_red"].gallery = [];
+                    itemsColorGalleryImages["u3_red"].gallery.push("img/catalog/876540/876540_1.jpg");
+                    itemsColorGalleryImages["u3_red"].gallery.push("img/catalog/876540/876540_2.jpg");
+                    itemsColorGalleryImages["u3_red"].gallery.push("img/catalog/876540/876540_3.jpg");
+                    itemsColorGalleryImages["u3_red"].gallery.push("img/catalog/876540/876540_4.jpg");
+                    itemsColorGalleryImages["u3_red"].gallery.push("img/catalog/876540/876540_5.jpg");
+
+                    itemsColorGalleryImages["u3_black"] = {};
+                    itemsColorGalleryImages["u3_black"].main = "img/catalog/876541/876541_0.png";
+                    itemsColorGalleryImages["u3_black"].gallery = [];
+                    itemsColorGalleryImages["u3_black"].gallery.push("img/catalog/876541/876541_1.jpg");
+                    itemsColorGalleryImages["u3_black"].gallery.push("img/catalog/876541/876541_2.jpg");
+                    itemsColorGalleryImages["u3_black"].gallery.push("img/catalog/876541/876541_3.jpg");
+                    itemsColorGalleryImages["u3_black"].gallery.push("img/catalog/876541/876541_4.jpg");
+
+                    itemsColorGalleryImages["u3_silver"] = {};
+                    itemsColorGalleryImages["u3_silver"].main = "img/catalog/876543/876543_0.png";
+                    itemsColorGalleryImages["u3_silver"].gallery = [];
+                    itemsColorGalleryImages["u3_silver"].gallery.push("img/catalog/876543/876543_1.jpg");
+                    itemsColorGalleryImages["u3_silver"].gallery.push("img/catalog/876543/876543_2.jpg");
+                    itemsColorGalleryImages["u3_silver"].gallery.push("img/catalog/876543/876543_3.jpg");
+                    itemsColorGalleryImages["u3_silver"].gallery.push("img/catalog/876543/876543_4.jpg");
+                    itemsColorGalleryImages["u3_silver"].gallery.push("img/catalog/876543/876543_5.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Smart Balance U3 - 6,5" LED</h3>
+
+                                <p class="inf">Гироскутер для катания по идеально ровным поверхностям. Дополнительная
+                                    подсветка даст возможность кататься до самой ночи и привлекать внимание
+                                    окружающих!</p></div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876539/876539_1.jpg" data-caption="Харьков 2017г."><img
+                                    src="img/catalog/876539/876539_0.png" class="active" alt="Smart Balance U3 LED"></a>
+                            </figure>
+                            <a class="podrb" href="javascript: void(0);" data-lightbox=""
+                               data-src="img/catalog/876539/876539_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 18 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>10,5 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>6,5 дюймов (16,5 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/music.png"></figure>
+                                    <p><span class="bold">Музыка: </span>Bluetooth 4.0 колонка</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>LED лампы над колесами</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-120 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>700W (2x350W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея:</span>SAMSUNG Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>580x190x180</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">Hip-Hop (граффити)</span>
+                                    </p></li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active"
+                                             style="background: url('img/catalog/876539/876539_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876539/876539_0.png" data-articul="876539"
+                                             data-name="u3led_graffiti" data-title="Hip-Hop (граффити)"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876538/876538_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876538/876538_0.png" data-articul="876538"
+                                             data-name="u3led_jungle" data-title="Jungle (зеленый)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">5 499 грн.</div>
+                                <div class="price left">4 850 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="876539">Заказать</a></div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["u3led_graffiti"] = {};
+                    itemsColorGalleryImages["u3led_graffiti"].main = "img/catalog/876539/876539_0.png";
+                    itemsColorGalleryImages["u3led_graffiti"].gallery = [];
+                    itemsColorGalleryImages["u3led_graffiti"].gallery.push("img/catalog/876539/876539_1.jpg");
+                    itemsColorGalleryImages["u3led_graffiti"].gallery.push("img/catalog/876539/876539_2.jpg");
+                    itemsColorGalleryImages["u3led_graffiti"].gallery.push("img/catalog/876539/876539_3.jpg");
+                    itemsColorGalleryImages["u3led_graffiti"].gallery.push("img/catalog/876539/876539_4.jpg");
+                    itemsColorGalleryImages["u3led_graffiti"].gallery.push("img/catalog/876539/876539_5.jpg");
+
+
+                    itemsColorGalleryImages["u3led_jungle"] = {};
+                    itemsColorGalleryImages["u3led_jungle"].main = "img/catalog/876538/876538_0.png";
+                    itemsColorGalleryImages["u3led_jungle"].gallery = [];
+                    itemsColorGalleryImages["u3led_jungle"].gallery.push("img/catalog/876538/876538_1.jpg");
+                    itemsColorGalleryImages["u3led_jungle"].gallery.push("img/catalog/876538/876538_2.jpg");
+                    itemsColorGalleryImages["u3led_jungle"].gallery.push("img/catalog/876538/876538_3.jpg");
+                    itemsColorGalleryImages["u3led_jungle"].gallery.push("img/catalog/876538/876538_4.jpg");
+                    itemsColorGalleryImages["u3led_jungle"].gallery.push("img/catalog/876538/876538_5.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Smart Balance lambo U6 - 8" LED</h3>
+
+                                <p class="inf">8-ми дюйсовые колеса из прочной резины и яркая дополнительная подсветка
+                                    сделает обладателя этого гироскутера центром притяжения!</p></div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876535/876535_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/catalog/876535/876535_0.png" class="active" alt="Smart Balance U6 LED"></a>
+                            </figure>
+                            <a class="podrb" href="javascript: void(0);" data-lightbox=""
+                               data-src="img/catalog/876535/876535_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 18 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>12 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>8 дюймов (20,3 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/music.png"></figure>
+                                    <p><span class="bold">Музыка: </span>Bluetooth 4.0 колонка</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>LED лампы над колесами</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-120 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>700W (2x350W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея: </span>SAMSUNG Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>600x230x230</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">Space</span></p></li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active"
+                                             style="background: url('img/catalog/876535/876535_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876535/876535_0.png" data-articul="876535"
+                                             data-name="u6_space" data-title="Space"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876537/876537_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876537/876537_0.png" data-articul="876537"
+                                             data-name="u6_jungle_green" data-title="Jungle (Зеленый)"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876536/876536_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876536/876536_0.png" data-articul="876536"
+                                             data-name="u6_blue_camo" data-title="Blue Camo"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876534/876534_color.png') center center no-repeat;border: 1px solid #545454;"
+                                             data-src="img/catalog/876534/876534_0.png" data-articul="876534"
+                                             data-name="u6_black_red" data-title="Black-red"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876533/876533_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876533/876533_0.png" data-articul="876533"
+                                             data-name="u6_pink_camo" data-title="Pink Camo"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876532/876532_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876532/876532_0.png" data-articul="876532"
+                                             data-name="u6_hip_hop" data-title="Hip-Hop (граффити)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">5 999 грн.</div>
+                                <div class="price left">5 650 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="876535">Заказать</a>&lt;!&ndash;<div class="credit left" data-title="Smart Balance Off-road" data-price="16490"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzJCNUI0NjdGMDc3MTFFNjk3MTJCM0IwMDUyRjNDMzAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzJCNUI0NjhGMDc3MTFFNjk3MTJCM0IwMDUyRjNDMzAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDMkI1QjQ2NUYwNzcxMUU2OTcxMkIzQjAwNTJGM0MzMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDMkI1QjQ2NkYwNzcxMUU2OTcxMkIzQjAwNTJGM0MzMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PurX1NMAAAHOSURBVHjatJVNKERRFMdnJkLJSillgZSNWFnYEUlZiRpbhUSUhFgphIUkoWx8ZuMjiZWIlZSUlfIVKQkl+Y7G79Sh6/XmjRnj1K/77nnv3f87955zntvn87mcLDUl2RWiZUI/HES4/sfKoBfkC+/cYY4kCtqhCWJgF7zhjCQJBqBE55dQeXxyeuQJk0AerBgCz1APezL5q4gbamEBMgx/B8x9TSLY8y7GOGgltMcgBOL1cCss/jH1f5tEkg91MI5gwi8FsmDJRmAL2qwPi8igXpfCLEJpAQTKdf9zLP4TqIYbO5FFWNd5LswjlG2zeCz0wAQkWu7dq8CB3Vd5OIcnxiH4UJ8c4BxCRcZzEt0MtECkZQ0ptFZY85sdUowsKBGtQqFxT5KgBi5gGNL9rCHb3eBPgCBc3xWPUAHDslbtl73Am2afncnZeOHBScSskw3NGNOiHQT2ocpJ4Md2GX1KDnxTF3eyayiGnUAC1kjEIS9NBXhPtrDxNwJmClttBG4d3umG6WB6j8cmvD1NVzubhM5gG5y/Bjmk+27aNjRrXfxdhGgOGUYN15lW9FUordqp1YvIObxrO98P+X/g9PslpfsYErQeXkMRkBT+FGAASYqAVq9CmLQAAAAASUVORK5CYII=" alt="" />в кредит</div>&ndash;&gt;
+                                &lt;!&ndash;<p>Условия кредита</p>&ndash;&gt;</div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["u6_space"] = {};
+                    itemsColorGalleryImages["u6_space"].main = "img/catalog/876535/876535_0.png";
+                    itemsColorGalleryImages["u6_space"].gallery = [];
+                    itemsColorGalleryImages["u6_space"].gallery.push("img/catalog/876535/876535_1.jpg");
+                    itemsColorGalleryImages["u6_space"].gallery.push("img/catalog/876535/876535_2.jpg");
+                    itemsColorGalleryImages["u6_space"].gallery.push("img/catalog/876535/876535_3.jpg");
+                    itemsColorGalleryImages["u6_space"].gallery.push("img/catalog/876535/876535_4.jpg");
+                    itemsColorGalleryImages["u6_space"].gallery.push("img/catalog/876535/876535_5.jpg");
+
+
+                    itemsColorGalleryImages["u6_jungle_green"] = {};
+                    itemsColorGalleryImages["u6_jungle_green"].main = "img/catalog/876537/876537_0.png";
+                    itemsColorGalleryImages["u6_jungle_green"].gallery = [];
+                    itemsColorGalleryImages["u6_jungle_green"].gallery.push("img/catalog/876537/876537_1.jpg");
+                    itemsColorGalleryImages["u6_jungle_green"].gallery.push("img/catalog/876537/876537_2.jpg");
+                    itemsColorGalleryImages["u6_jungle_green"].gallery.push("img/catalog/876537/876537_3.jpg");
+                    itemsColorGalleryImages["u6_jungle_green"].gallery.push("img/catalog/876537/876537_4.jpg");
+                    itemsColorGalleryImages["u6_jungle_green"].gallery.push("img/catalog/876537/876537_5.jpg");
+
+
+                    itemsColorGalleryImages["u6_blue_camo"] = {};
+                    itemsColorGalleryImages["u6_blue_camo"].main = "img/catalog/876536/876536_0.png";
+                    itemsColorGalleryImages["u6_blue_camo"].gallery = [];
+                    itemsColorGalleryImages["u6_blue_camo"].gallery.push("img/catalog/876536/876536_1.jpg");
+                    itemsColorGalleryImages["u6_blue_camo"].gallery.push("img/catalog/876536/876536_2.jpg");
+                    itemsColorGalleryImages["u6_blue_camo"].gallery.push("img/catalog/876536/876536_3.jpg");
+                    itemsColorGalleryImages["u6_blue_camo"].gallery.push("img/catalog/876536/876536_4.jpg");
+
+
+                    itemsColorGalleryImages["u6_black_red"] = {};
+                    itemsColorGalleryImages["u6_black_red"].main = "img/catalog/876534/876534_0.png";
+                    itemsColorGalleryImages["u6_black_red"].gallery = [];
+                    itemsColorGalleryImages["u6_black_red"].gallery.push("img/catalog/876534/876534_1.jpg");
+                    itemsColorGalleryImages["u6_black_red"].gallery.push("img/catalog/876534/876534_2.jpg");
+                    itemsColorGalleryImages["u6_black_red"].gallery.push("img/catalog/876534/876534_3.jpg");
+                    itemsColorGalleryImages["u6_black_red"].gallery.push("img/catalog/876534/876534_4.jpg");
+
+
+                    itemsColorGalleryImages["u6_pink_camo"] = {};
+                    itemsColorGalleryImages["u6_pink_camo"].main = "img/catalog/876533/876533_0.png";
+                    itemsColorGalleryImages["u6_pink_camo"].gallery = [];
+                    itemsColorGalleryImages["u6_pink_camo"].gallery.push("img/catalog/876533/876533_1.jpg");
+                    itemsColorGalleryImages["u6_pink_camo"].gallery.push("img/catalog/876533/876533_2.jpg");
+                    itemsColorGalleryImages["u6_pink_camo"].gallery.push("img/catalog/876533/876533_3.jpg");
+                    itemsColorGalleryImages["u6_pink_camo"].gallery.push("img/catalog/876533/876533_4.jpg");
+
+
+                    itemsColorGalleryImages["u6_hip_hop"] = {};
+                    itemsColorGalleryImages["u6_hip_hop"].main = "img/catalog/876532/876532_0.png";
+                    itemsColorGalleryImages["u6_hip_hop"].gallery = [];
+                    itemsColorGalleryImages["u6_hip_hop"].gallery.push("img/catalog/876532/876532_1.jpg");
+                    itemsColorGalleryImages["u6_hip_hop"].gallery.push("img/catalog/876532/876532_2.jpg");
+                    itemsColorGalleryImages["u6_hip_hop"].gallery.push("img/catalog/876532/876532_3.jpg");
+                    itemsColorGalleryImages["u6_hip_hop"].gallery.push("img/catalog/876532/876532_4.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Smart Balance U8 - 10"</h3>
+
+                                <p class="inf">Новый дизайн самой популярной модели! Смело преодолевайте любые неровности
+                                    газона и брусчатки благодаря большим 10-дюймовым колесам. Расцветки 2017!</p></div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876526/876526_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/catalog/876526/876526_0.png" class="active" alt="Smart Balance U8"></a>
+                            </figure>
+                            &lt;!&ndash;<a class="podrb podrb_video" href="#catalog_video" data-modal="" data-video-url="PvbWwk-UmN8"><img src="/img/podrb_video.png" alt="" /></a>&ndash;&gt;<a
+                                class="podrb" href="javascript: void(0);" data-lightbox=""
+                                data-src="img/catalog/876526/876526_1.jpg" data-caption="Харьков, 2017г."><img
+                                src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            &lt;!&ndash;<h3>Smart Balance 10.5 Pro</h3>
+ <p class="inf">Новый дизайн! Абсолютно другой уровень комфорта при катании на гироскутере! Увеличенная ширина беcкамерных надувных колес на 23 мм!</p>&ndash;&gt;
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 20 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>13,5 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>10 дюймов (26 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/music.png"></figure>
+                                    <p><span class="bold">Музыка: </span>Bluetooth 4.0 колонка</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>Габаритные огни</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-120 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>1200W (2x600W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея: </span>SAMSUNG Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>660x270x270</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">Fire (огонь)</span></p>
+                                </li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active"
+                                             style="background: url('img/catalog/876526/876526_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876526/876526_0.png" data-articul="876526"
+                                             data-name="u8_fire" data-title="Fire (огонь)"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876531/876531_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876531/876531_0.png" data-articul="876531"
+                                             data-name="u8_hip_hop_graffiti" data-title="Hip-Hop (граффити)"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876530/876530_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876530/876530_0.png" data-articul="876530"
+                                             data-name="u8_space" data-title="Space"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876529/876529_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876529/876529_0.png" data-articul="876529"
+                                             data-name="u8_hip_hop_new" data-title="Hip-Hop New"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876528/876528_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876528/876528_0.png" data-articul="876528"
+                                             data-name="u8_carbon_black" data-title="Carbon black"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876527/876527_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876527/876527_0.png" data-articul="876527"
+                                             data-name="u8_blue_camo" data-title="Blue Camo"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">6 799 грн.</div>
+                                <div class="price left">6 350 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="876526">Заказать</a></div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["u8_fire"] = {};
+                    itemsColorGalleryImages["u8_fire"].main = "img/catalog/876526/876526_0.png";
+                    itemsColorGalleryImages["u8_fire"].gallery = [];
+                    itemsColorGalleryImages["u8_fire"].gallery.push("img/catalog/876526/876526_1.jpg");
+                    itemsColorGalleryImages["u8_fire"].gallery.push("img/catalog/876526/876526_2.jpg");
+                    itemsColorGalleryImages["u8_fire"].gallery.push("img/catalog/876526/876526_3.jpg");
+                    itemsColorGalleryImages["u8_fire"].gallery.push("img/catalog/876526/876526_4.jpg");
+                    itemsColorGalleryImages["u8_fire"].gallery.push("img/catalog/876526/876526_5.jpg");
+
+
+                    itemsColorGalleryImages["u8_hip_hop_graffiti"] = {};
+                    itemsColorGalleryImages["u8_hip_hop_graffiti"].main = "img/catalog/876531/876531_0.png";
+                    itemsColorGalleryImages["u8_hip_hop_graffiti"].gallery = [];
+                    itemsColorGalleryImages["u8_hip_hop_graffiti"].gallery.push("img/catalog/876531/876531_1.jpg");
+                    itemsColorGalleryImages["u8_hip_hop_graffiti"].gallery.push("img/catalog/876531/876531_2.jpg");
+                    itemsColorGalleryImages["u8_hip_hop_graffiti"].gallery.push("img/catalog/876531/876531_3.jpg");
+                    itemsColorGalleryImages["u8_hip_hop_graffiti"].gallery.push("img/catalog/876531/876531_4.jpg");
+                    itemsColorGalleryImages["u8_hip_hop_graffiti"].gallery.push("img/catalog/876531/876531_5.jpg");
+
+
+                    itemsColorGalleryImages["u8_space"] = {};
+                    itemsColorGalleryImages["u8_space"].main = "img/catalog/876530/876530_0.png";
+                    itemsColorGalleryImages["u8_space"].gallery = [];
+                    itemsColorGalleryImages["u8_space"].gallery.push("img/catalog/876530/876530_1.jpg");
+                    itemsColorGalleryImages["u8_space"].gallery.push("img/catalog/876530/876530_2.jpg");
+                    itemsColorGalleryImages["u8_space"].gallery.push("img/catalog/876530/876530_3.jpg");
+                    itemsColorGalleryImages["u8_space"].gallery.push("img/catalog/876530/876530_4.jpg");
+                    itemsColorGalleryImages["u8_space"].gallery.push("img/catalog/876530/876530_5.jpg");
+
+
+                    itemsColorGalleryImages["u8_hip_hop_new"] = {};
+                    itemsColorGalleryImages["u8_hip_hop_new"].main = "img/catalog/876529/876529_0.png";
+                    itemsColorGalleryImages["u8_hip_hop_new"].gallery = [];
+                    itemsColorGalleryImages["u8_hip_hop_new"].gallery.push("img/catalog/876529/876529_1.jpg");
+                    itemsColorGalleryImages["u8_hip_hop_new"].gallery.push("img/catalog/876529/876529_2.jpg");
+                    itemsColorGalleryImages["u8_hip_hop_new"].gallery.push("img/catalog/876529/876529_3.jpg");
+                    itemsColorGalleryImages["u8_hip_hop_new"].gallery.push("img/catalog/876529/876529_4.jpg");
+
+
+                    itemsColorGalleryImages["u8_carbon_black"] = {};
+                    itemsColorGalleryImages["u8_carbon_black"].main = "img/catalog/876528/876528_0.png";
+                    itemsColorGalleryImages["u8_carbon_black"].gallery = [];
+                    itemsColorGalleryImages["u8_carbon_black"].gallery.push("img/catalog/876528/876528_1.jpg");
+                    itemsColorGalleryImages["u8_carbon_black"].gallery.push("img/catalog/876528/876528_2.jpg");
+                    itemsColorGalleryImages["u8_carbon_black"].gallery.push("img/catalog/876528/876528_3.jpg");
+                    itemsColorGalleryImages["u8_carbon_black"].gallery.push("img/catalog/876528/876528_4.jpg");
+                    itemsColorGalleryImages["u8_carbon_black"].gallery.push("img/catalog/876528/876528_5.jpg");
+
+
+                    itemsColorGalleryImages["u8_blue_camo"] = {};
+                    itemsColorGalleryImages["u8_blue_camo"].main = "img/catalog/876527/876527_0.png";
+                    itemsColorGalleryImages["u8_blue_camo"].gallery = [];
+                    itemsColorGalleryImages["u8_blue_camo"].gallery.push("img/catalog/876527/876527_1.jpg");
+                    itemsColorGalleryImages["u8_blue_camo"].gallery.push("img/catalog/876527/876527_2.jpg");
+                    itemsColorGalleryImages["u8_blue_camo"].gallery.push("img/catalog/876527/876527_3.jpg");
+                    itemsColorGalleryImages["u8_blue_camo"].gallery.push("img/catalog/876527/876527_4.jpg");
+                    itemsColorGalleryImages["u8_blue_camo"].gallery.push("img/catalog/876527/876527_5.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Smart Balance All Road - 10,5"</h3>
+
+                                <p class="inf">Настоящий "танк" среди современных моделей гироскутеров. Маленький вездехот
+                                    на надувных колесах. Именно благодаря своим сверхпроходимым качествам его и называют
+                                    ALLROAD.</p></div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876517/876517_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/catalog/876517/876517_0.png" class="active" alt="Smart Balance All Road"></a>
+                            </figure>
+                            &lt;!&ndash;<a class="podrb podrb_video" href="#catalog_video" data-modal="" data-video-url="PvbWwk-UmN8"><img src="/img/podrb_video.png" alt="" /></a>&ndash;&gt;<a
+                                class="podrb" href="javascript: void(0);" data-lightbox=""
+                                data-src="img/catalog/876517/876517_1.jpg" data-caption="Харьков, 2017г."><img
+                                src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            &lt;!&ndash;<h3>Smart Balance 10 - 2017</h3>
+ <p class="inf">Усовершенствованная версия самого популярного гироскутера 2016 года! САМОБАЛАНСИРОВКА + ПРИЛОЖЕНИЕ делает этот гироскутер идеальным для обучения и катания детей!</p>&ndash;&gt;
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 20 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>14 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>10,5 дюймов (27 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/music.png"></figure>
+                                    <p><span class="bold">Музыка: </span>Bluetooth 4.0 колонка</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>Габаритные огни</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-130 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>1200W (2x600W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея: </span>SAMSUNG Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>680x310x310</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">Fire (огонь)</span></p>
+                                </li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active"
+                                             style="background: url('img/catalog/876517/876517_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876517/876517_0.png" data-articul="876517"
+                                             data-name="all_road_hip_hop_new" data-title="Hip-Hop New"></div>
+                                        <div class="color-ball"
+                                             style="background-color: #1f1e21;border: 1px solid #545454;"
+                                             data-src="img/catalog/876525/876525_0.png" data-articul="876525"
+                                             data-name="all_road_black" data-title="Black (матовый)"></div>
+                                        <div class="color-ball" style="background-color: #b51241;"
+                                             data-src="img/catalog/876523/876523_0.png" data-articul="SB10new2017-Levin"
+                                             data-name="all_road_red_black" data-title="Red-Black (матовый)"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876521/876521_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876521/876521_0.png" data-articul="876521"
+                                             data-name="all-road_space" data-title="Space"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876519/876519_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876519/876519_0.png" data-articul="876519"
+                                             data-name="all_road_fire" data-title="Fire (огонь)"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876515/876515_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876515/876515_0.png" data-articul="876515"
+                                             data-name="all_road_graffiti" data-title="Hip-Hop (граффити)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">7 899 грн.</div>
+                                <div class="price left">7 650 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="SB10new2017-HipHop">Заказать</a>&lt;!&ndash;<div class="credit left" data-title="Smart Balance 10 - 2017" data-price="16990"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAWCAYAAAA1vze2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzJCNUI0NjdGMDc3MTFFNjk3MTJCM0IwMDUyRjNDMzAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzJCNUI0NjhGMDc3MTFFNjk3MTJCM0IwMDUyRjNDMzAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDMkI1QjQ2NUYwNzcxMUU2OTcxMkIzQjAwNTJGM0MzMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDMkI1QjQ2NkYwNzcxMUU2OTcxMkIzQjAwNTJGM0MzMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PurX1NMAAAHOSURBVHjatJVNKERRFMdnJkLJSillgZSNWFnYEUlZiRpbhUSUhFgphIUkoWx8ZuMjiZWIlZSUlfIVKQkl+Y7G79Sh6/XmjRnj1K/77nnv3f87955zntvn87mcLDUl2RWiZUI/HES4/sfKoBfkC+/cYY4kCtqhCWJgF7zhjCQJBqBE55dQeXxyeuQJk0AerBgCz1APezL5q4gbamEBMgx/B8x9TSLY8y7GOGgltMcgBOL1cCss/jH1f5tEkg91MI5gwi8FsmDJRmAL2qwPi8igXpfCLEJpAQTKdf9zLP4TqIYbO5FFWNd5LswjlG2zeCz0wAQkWu7dq8CB3Vd5OIcnxiH4UJ8c4BxCRcZzEt0MtECkZQ0ptFZY85sdUowsKBGtQqFxT5KgBi5gGNL9rCHb3eBPgCBc3xWPUAHDslbtl73Am2afncnZeOHBScSskw3NGNOiHQT2ocpJ4Md2GX1KDnxTF3eyayiGnUAC1kjEIS9NBXhPtrDxNwJmClttBG4d3umG6WB6j8cmvD1NVzubhM5gG5y/Bjmk+27aNjRrXfxdhGgOGUYN15lW9FUordqp1YvIObxrO98P+X/g9PslpfsYErQeXkMRkBT+FGAASYqAVq9CmLQAAAAASUVORK5CYII=" alt="" />в кредит</div>&ndash;&gt;
+                                &lt;!&ndash;<p>Условия кредита</p>&ndash;&gt;</div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["all_road_hip_hop_new"] = {};
+                    itemsColorGalleryImages["all_road_hip_hop_new"].main = "img/catalog/876517/876517_0.png";
+                    itemsColorGalleryImages["all_road_hip_hop_new"].gallery = [];
+                    itemsColorGalleryImages["all_road_hip_hop_new"].gallery.push("img/catalog/876517/876517_1.jpg");
+                    itemsColorGalleryImages["all_road_hip_hop_new"].gallery.push("img/catalog/876517/876517_2.jpg");
+                    itemsColorGalleryImages["all_road_hip_hop_new"].gallery.push("img/catalog/876517/876517_3.jpg");
+                    itemsColorGalleryImages["all_road_hip_hop_new"].gallery.push("img/catalog/876517/876517_4.jpg");
+                    itemsColorGalleryImages["all_road_hip_hop_new"].gallery.push("img/catalog/876517/876517_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_black"] = {};
+                    itemsColorGalleryImages["all_road_black"].main = "img/catalog/876525/876525_0.png";
+                    itemsColorGalleryImages["all_road_black"].gallery = [];
+                    itemsColorGalleryImages["all_road_black"].gallery.push("img/catalog/876525/876525_1.jpg");
+                    itemsColorGalleryImages["all_road_black"].gallery.push("img/catalog/876525/876525_2.jpg");
+                    itemsColorGalleryImages["all_road_black"].gallery.push("img/catalog/876525/876525_3.jpg");
+                    itemsColorGalleryImages["all_road_black"].gallery.push("img/catalog/876525/876525_4.jpg");
+                    itemsColorGalleryImages["all_road_black"].gallery.push("img/catalog/876525/876525_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_red_black"] = {};
+                    itemsColorGalleryImages["all_road_red_black"].main = "img/catalog/sm10/876523/876523_0.png";
+                    itemsColorGalleryImages["all_road_red_black"].gallery = [];
+                    itemsColorGalleryImages["all_road_red_black"].gallery.push("img/catalog/sm10/876523/876523_1.jpg");
+                    itemsColorGalleryImages["all_road_red_black"].gallery.push("img/catalog/sm10/876523/876523_2.jpg");
+                    itemsColorGalleryImages["all_road_red_black"].gallery.push("img/catalog/sm10/876523/876523_3.jpg");
+                    itemsColorGalleryImages["all_road_red_black"].gallery.push("img/catalog/sm10/876523/876523_4.jpg");
+                    itemsColorGalleryImages["all_road_red_black"].gallery.push("img/catalog/sm10/876523/876523_5.jpg");
+
+
+                    itemsColorGalleryImages["all-road_space"] = {};
+                    itemsColorGalleryImages["all-road_space"].main = "img/catalog/876521/876521_0.png";
+                    itemsColorGalleryImages["all-road_space"].gallery = [];
+                    itemsColorGalleryImages["all-road_space"].gallery.push("img/catalog/876521/876521_1.jpg");
+                    itemsColorGalleryImages["all-road_space"].gallery.push("img/catalog/876521/876521_2.jpg");
+                    itemsColorGalleryImages["all-road_space"].gallery.push("img/catalog/876521/876521_3.jpg");
+                    itemsColorGalleryImages["all-road_space"].gallery.push("img/catalog/876521/876521_4.jpg");
+                    itemsColorGalleryImages["all-road_space"].gallery.push("img/catalog/876521/876521_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_fire"] = {};
+                    itemsColorGalleryImages["all_road_fire"].main = "img/catalog/876519/876519_0.png";
+                    itemsColorGalleryImages["all_road_fire"].gallery = [];
+                    itemsColorGalleryImages["all_road_fire"].gallery.push("img/catalog/876519/876519_1.jpg");
+                    itemsColorGalleryImages["all_road_fire"].gallery.push("img/catalog/876519/876519_2.jpg");
+                    itemsColorGalleryImages["all_road_fire"].gallery.push("img/catalog/876519/876519_3.jpg");
+                    itemsColorGalleryImages["all_road_fire"].gallery.push("img/catalog/876519/876519_4.jpg");
+                    itemsColorGalleryImages["all_road_fire"].gallery.push("img/catalog/876519/876519_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_graffiti"] = {};
+                    itemsColorGalleryImages["all_road_graffiti"].main = "img/catalog/876515/876515_0.png";
+                    itemsColorGalleryImages["all_road_graffiti"].gallery = [];
+                    itemsColorGalleryImages["all_road_graffiti"].gallery.push("img/catalog/876515/876515_1.jpg");
+                    itemsColorGalleryImages["all_road_graffiti"].gallery.push("img/catalog/876515/876515_2.jpg");
+                    itemsColorGalleryImages["all_road_graffiti"].gallery.push("img/catalog/876515/876515_3.jpg");
+                    itemsColorGalleryImages["all_road_graffiti"].gallery.push("img/catalog/876515/876515_4.jpg");
+                    itemsColorGalleryImages["all_road_graffiti"].gallery.push("img/catalog/876515/876515_5.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Smart Balance All Road - 10,5" APP</h3>
+
+                                <p class="inf">С легкостью преодолевает препятствия, ездит по грязи и песку, маленький
+                                    вездехот на надувных колесах. ПРИЛОЖЕНИЕ делает этот гироскутер идеальным для
+                                    обучения и катания детей!</p></div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876524/876524_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/catalog/876524/876524_0.png" class="active"
+                                    alt="Smart Balance All Road APP"></a></figure>
+                            <a class="podrb" href="javascript: void(0);" data-lightbox=""
+                               data-src="img/catalog/876524/876524_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/app.png"></figure>
+                                    <p><span class="bold">Приложение: </span>Тао Тао + самобаланс</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 20 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>14 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>10,5 дюймов (27 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/music.png"></figure>
+                                    <p><span class="bold">Музыка: </span>Bluetooth 4.0 колонка</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>Габаритные огни</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-130 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>1200W (2x600W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея: </span>SAMSUNG Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>680x310x310</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">Black (матовый)</span></p>
+                                </li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active"
+                                             style="background-color: #1f1e21;border: 1px solid #545454;"
+                                             data-src="img/catalog/876524/876524_0.png" data-articul="876524"
+                                             data-name="all_road_app_black" data-title="Black (матовый)"></div>
+                                        <div class="color-ball" style="background-color: #b51241;"
+                                             data-src="img/catalog/876522/876522_0.png" data-articul="876522"
+                                             data-name="all_road_app_red" data-title="Red (матовый)"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876520/876520_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876520/876520_0.png" data-articul="876520"
+                                             data-name="all_road_app_space" data-title="Space"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876518/876518_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876518/876518_0.png" data-articul="876518"
+                                             data-name="all_road_app_fire" data-title="Fire (огонь)"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876516/876516_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876516/876516_0.png" data-articul="876516"
+                                             data-name="all_road_app_hip_hop_new" data-title="Hip-Hop New"></div>
+                                        <div class="color-ball"
+                                             style="background: url('img/catalog/876514/876514_color.png') center center no-repeat;"
+                                             data-src="img/catalog/876514/876514_0.png" data-articul="876514"
+                                             data-name="all_road_app_graffiti" data-title="Hip-Hop (граффити)"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">8 649 грн.</div>
+                                <div class="price left">8 199 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="SB10pro-Fire">Заказать</a></div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["all_road_app_black"] = {};
+                    itemsColorGalleryImages["all_road_app_black"].main = "img/catalog/876524/876524_0.png";
+                    itemsColorGalleryImages["all_road_app_black"].gallery = [];
+                    itemsColorGalleryImages["all_road_app_black"].gallery.push("img/catalog/876524/876524_1.jpg");
+                    itemsColorGalleryImages["all_road_app_black"].gallery.push("img/catalog/876524/876524_2.jpg");
+                    itemsColorGalleryImages["all_road_app_black"].gallery.push("img/catalog/876524/876524_3.jpg");
+                    itemsColorGalleryImages["all_road_app_black"].gallery.push("img/catalog/876524/876524_4.jpg");
+                    itemsColorGalleryImages["all_road_app_black"].gallery.push("img/catalog/876524/876524_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_app_red"] = {};
+                    itemsColorGalleryImages["all_road_app_red"].main = "img/catalog/876522/876522_0.png";
+                    itemsColorGalleryImages["all_road_app_red"].gallery = [];
+                    itemsColorGalleryImages["all_road_app_red"].gallery.push("img/catalog/876522/876522_1.jpg");
+                    itemsColorGalleryImages["all_road_app_red"].gallery.push("img/catalog/876522/876522_2.jpg");
+                    itemsColorGalleryImages["all_road_app_red"].gallery.push("img/catalog/876522/876522_3.jpg");
+                    itemsColorGalleryImages["all_road_app_red"].gallery.push("img/catalog/876522/876522_4.jpg");
+                    itemsColorGalleryImages["all_road_app_red"].gallery.push("img/catalog/876522/876522_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_app_space"] = {};
+                    itemsColorGalleryImages["all_road_app_space"].main = "img/catalog/876520/876520_0.png";
+                    itemsColorGalleryImages["all_road_app_space"].gallery = [];
+                    itemsColorGalleryImages["all_road_app_space"].gallery.push("img/catalog/876520/876520_1.jpg");
+                    itemsColorGalleryImages["all_road_app_space"].gallery.push("img/catalog/876520/876520_2.jpg");
+                    itemsColorGalleryImages["all_road_app_space"].gallery.push("img/catalog/876520/876520_3.jpg");
+                    itemsColorGalleryImages["all_road_app_space"].gallery.push("img/catalog/876520/876520_4.jpg");
+                    itemsColorGalleryImages["all_road_app_space"].gallery.push("img/catalog/876520/876520_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_app_fire"] = {};
+                    itemsColorGalleryImages["all_road_app_fire"].main = "img/catalog/876518/876518_0.png";
+                    itemsColorGalleryImages["all_road_app_fire"].gallery = [];
+                    itemsColorGalleryImages["all_road_app_fire"].gallery.push("img/catalog/876518/876518_1.jpg");
+                    itemsColorGalleryImages["all_road_app_fire"].gallery.push("img/catalog/876518/876518_2.jpg");
+                    itemsColorGalleryImages["all_road_app_fire"].gallery.push("img/catalog/876518/876518_3.jpg");
+                    itemsColorGalleryImages["all_road_app_fire"].gallery.push("img/catalog/876518/876518_4.jpg");
+                    itemsColorGalleryImages["all_road_app_fire"].gallery.push("img/catalog/876518/876518_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_app_hip_hop_new"] = {};
+                    itemsColorGalleryImages["all_road_app_hip_hop_new"].main = "img/catalog/876516/876516_0.png";
+                    itemsColorGalleryImages["all_road_app_hip_hop_new"].gallery = [];
+                    itemsColorGalleryImages["all_road_app_hip_hop_new"].gallery.push("img/catalog/876516/876516_1.jpg");
+                    itemsColorGalleryImages["all_road_app_hip_hop_new"].gallery.push("img/catalog/876516/876516_2.jpg");
+                    itemsColorGalleryImages["all_road_app_hip_hop_new"].gallery.push("img/catalog/876516/876516_3.jpg");
+                    itemsColorGalleryImages["all_road_app_hip_hop_new"].gallery.push("img/catalog/876516/876516_4.jpg");
+                    itemsColorGalleryImages["all_road_app_hip_hop_new"].gallery.push("img/catalog/876516/876516_5.jpg");
+
+
+                    itemsColorGalleryImages["all_road_app_graffiti"] = {};
+                    itemsColorGalleryImages["all_road_app_graffiti"].main = "img/catalog/876514/876514_0.png";
+                    itemsColorGalleryImages["all_road_app_graffiti"].gallery = [];
+                    itemsColorGalleryImages["all_road_app_graffiti"].gallery.push("img/catalog/876514/876514_1.jpg");
+                    itemsColorGalleryImages["all_road_app_graffiti"].gallery.push("img/catalog/876514/876514_2.jpg");
+                    itemsColorGalleryImages["all_road_app_graffiti"].gallery.push("img/catalog/876514/876514_3.jpg");
+                    itemsColorGalleryImages["all_road_app_graffiti"].gallery.push("img/catalog/876514/876514_4.jpg");
+                    itemsColorGalleryImages["all_road_app_graffiti"].gallery.push("img/catalog/876514/876514_5.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Smart Balance KIWANO - 8,5"</h3>
+
+                                <p class="inf">Отличная модель с повышенным клиренсом, а также рисунком протектора,
+                                    который позволяет не бояться бездорожья. Корпус выполнен из высокопрочного
+                                    композитного пластика.</p></div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876513/876513_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/catalog/876513/876513_0.png" class="active" alt="Smart Balance Kiwano"></a>
+                            </figure>
+                            <a class="podrb" href="javascript: void(0);" data-lightbox=""
+                               data-src="img/catalog/876513/876513_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 20 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>14,5 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>8,5 дюймов (21 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/music.png"></figure>
+                                    <p><span class="bold">Музыка: </span>Bluetooth 4.0 колонка</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>Габаритные огни</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-130 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>1000W (2x500W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея:  </span>SAMSUNG Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>700x230x230</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">Black</span></p></li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active" style="background-color: #59576e"
+                                             data-src="img/catalog/876513/876513_0.png" data-articul="876513"
+                                             data-name="kiwano_black" data-title="Black"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">7 999 грн.</div>
+                                <div class="price left">7 099 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="SB10pro-Fire">Заказать</a></div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["kiwano_black"] = {};
+                    itemsColorGalleryImages["kiwano_black"].main = "img/catalog/876513/876513_0.png";
+                    itemsColorGalleryImages["kiwano_black"].gallery = [];
+                    itemsColorGalleryImages["kiwano_black"].gallery.push("img/catalog/876513/876513_1.jpg");
+                    itemsColorGalleryImages["kiwano_black"].gallery.push("img/catalog/876513/876513_2.jpg");
+                    itemsColorGalleryImages["kiwano_black"].gallery.push("img/catalog/876513/876513_3.jpg");
+                    itemsColorGalleryImages["kiwano_black"].gallery.push("img/catalog/876513/876513_4.jpg");
+                    itemsColorGalleryImages["kiwano_black"].gallery.push("img/catalog/876513/876513_5.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Smart Balance KIWANO - 8,5" APP</h3>
+
+                                <p class="inf">Повышенная проходимость и высокая прочность материала корпуса в сочетании с
+                                    приложением, которое будет контролировать все параметры вашего гироскутера.</p>
+                            </div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876512/876512_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/catalog/876512/876512_0.png" class="active"
+                                    alt="Smart Balance 10.5 Pro - 2017"></a></figure>
+                            <a class="podrb" href="javascript: void(0);" data-lightbox=""
+                               data-src="img/catalog/876512/876512_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/app.png"></figure>
+                                    <p><span class="bold">Приложение: </span>Тао Тао + самобаланс</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 20 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>14,5 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>8,5 дюймов (21 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/music.png"></figure>
+                                    <p><span class="bold">Музыка: </span>Bluetooth 4.0 колонка</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>LED-фары + габариты</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-130 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>1000W (2x500W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея: </span>SAMSUNG Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>700x230x230</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">Black (матовый)</span></p>
+                                </li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active" style="background-color: #59576e"
+                                             data-src="img/catalog/876512/876512_0.png" data-articul="876512"
+                                             data-name="kiwano_app_black" data-title="Black"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">8 599 грн.</div>
+                                <div class="price left">7 599 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="SB10pro-Fire">Заказать</a></div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["kiwano_app_black"] = {};
+                    itemsColorGalleryImages["kiwano_app_black"].main = "img/catalog/876512/876512_0.png";
+                    itemsColorGalleryImages["kiwano_app_black"].gallery = [];
+                    itemsColorGalleryImages["kiwano_app_black"].gallery.push("img/catalog/876512/876512_1.jpg");
+                    itemsColorGalleryImages["kiwano_app_black"].gallery.push("img/catalog/876512/876512_2.jpg");
+                    itemsColorGalleryImages["kiwano_app_black"].gallery.push("img/catalog/876512/876512_3.jpg");
+                    itemsColorGalleryImages["kiwano_app_black"].gallery.push("img/catalog/876512/876512_4.jpg");
+                    itemsColorGalleryImages["kiwano_app_black"].gallery.push("img/catalog/876512/876512_5.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Mpnorim Ninebot mini 10,5"</h3>
+
+                                <p class="inf">Копия Xiaomi, высокая контролируемость движений благодаря наличию коленного
+                                    руля, полноценные фоточувствительные фары + САМОБАЛАНС и приложение M1robot!</p>
+                            </div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876511/876511_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/catalog/876511/876511_0.png" class="active"
+                                    alt="Smart Balance 10.5 Pro - 2017"></a></figure>
+                            <a class="podrb" href="javascript: void(0);" data-lightbox=""
+                               data-src="img/catalog/876511/876511_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/app.png"></figure>
+                                    <p><span class="bold">Приложение: </span>M1robot + самобаланс</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 20 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>до 22 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>12,8 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>10,5 дюймов (27 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>LED-фары + габариты</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-120 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>1400W (2x700W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея: </span>Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>550x280x600</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">White</span></p></li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active" style="background-color: #f3f3f0;"
+                                             data-src="img/catalog/876511/876511_0.png"
+                                             data-articul="876511"
+                                             data-name="ninebot_mini_white"
+                                             data-title="White">
+                                        </div>
+                                        <div class="color-ball"
+                                             style="background-color: #1f1e21; border: 1px solid #545454;"
+                                             data-src="img/catalog/876510/876510_0.png"
+                                             data-articul="876510"
+                                             data-name="ninebot_mini_black"
+                                             data-title="Black">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">9 999 грн.</div>
+                                <div class="price left">9 850 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="SB10pro-Fire">Заказать</a></div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["ninebot_mini_white"] = {};
+                    itemsColorGalleryImages["ninebot_mini_white"].main = "img/catalog/876511/876511_0.png";
+                    itemsColorGalleryImages["ninebot_mini_white"].gallery = [];
+                    itemsColorGalleryImages["ninebot_mini_white"].gallery.push("img/catalog/876511/876511_1.jpg");
+                    itemsColorGalleryImages["ninebot_mini_white"].gallery.push("img/catalog/876511/876511_2.jpg");
+                    itemsColorGalleryImages["ninebot_mini_white"].gallery.push("img/catalog/876511/876511_3.jpg");
+                    itemsColorGalleryImages["ninebot_mini_white"].gallery.push("img/catalog/876511/876511_4.jpg");
+
+
+                    itemsColorGalleryImages["ninebot_mini_black"] = {};
+                    itemsColorGalleryImages["ninebot_mini_black"].main = "img/catalog/876510/876510_0.png";
+                    itemsColorGalleryImages["ninebot_mini_black"].gallery = [];
+                    itemsColorGalleryImages["ninebot_mini_black"].gallery.push("img/catalog/876510/876510_1.jpg");
+                    itemsColorGalleryImages["ninebot_mini_black"].gallery.push("img/catalog/876510/876510_2.jpg");
+                    itemsColorGalleryImages["ninebot_mini_black"].gallery.push("img/catalog/876510/876510_3.jpg");
+                    itemsColorGalleryImages["ninebot_mini_black"].gallery.push("img/catalog/876510/876510_4.jpg");
+                </script>
+                <div class="item">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="heading"><h3>Ninebot mini Pro 10,5"</h3>
+
+                                <p class="inf">Самый мощный среди гироскутеров, ВСЕСЕЗОННИК Monorim Ninebot mini Pro
+                                    (копия Xiaomi) с защитой от брызг и интелектуальным управлением благодаря приложению
+                                    M1robot!</p></div>
+                            <figure><a href="javascript: void(0);" data-lightbox=""
+                                       data-src="img/catalog/876509/876509_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/catalog/876509/876509_0.png" class="active"
+                                    alt="Smart Balance 10.5 Pro - 2017"></a></figure>
+                            <a class="podrb" href="javascript: void(0);" data-lightbox=""
+                               data-src="img/catalog/876509/876509_1.jpg" data-caption="Харьков, 2017г."><img
+                                    src="img/podrb_photo.png"></a>
+                        </div>
+                        <div class="cell">
+                            <div class="color-here"></div>
+                            <p class="inf">Технические характеристики:</p>
+                            <ul>
+                                <li>
+                                    <figure><img src="img/catalog/icons/app.png"></figure>
+                                    <p><span class="bold">Приложение: </span>M1robot + самобаланс</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/speed.png"></figure>
+                                    <p><span class="bold">Скорость: </span>до 20 км/ч</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/distance.png"></figure>
+                                    <p><span class="bold">Расстояние: </span>15-20 км</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Вес: </span>12,8 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/wheel.png"></figure>
+                                    <p><span class="bold">Колеса: </span>10,5 дюймов (27 см)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/led.png"></figure>
+                                    <p><span class="bold">Подсветка: </span>Габаритные огни</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/weight.png"></figure>
+                                    <p><span class="bold">Нагрузка: </span>20-120 кг</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/power.png"></figure>
+                                    <p><span class="bold">Мощность: </span>1600W (2x800W)</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/battery.png"></figure>
+                                    <p><span class="bold">Батарея: </span>Li-ion 36w 4,4aH</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/dimentions.png"></figure>
+                                    <p><span class="bold">Габариты: </span>550x280x600-950</p></li>
+                                <li>
+                                    <figure><img src="img/catalog/icons/color.png"></figure>
+                                    <p><span class="bold">Цвет: </span><span class="color-active">White</span></p></li>
+                            </ul>
+                            <h3 class="dost-color">Доступные цвета</h3>
+
+                            <div class="color-lst">
+                                <div class="color-lst-block">
+                                    <div class="inline-row color-lst-block-full">
+                                        <div class="color-ball active" style="background-color:#f3f3f0"
+                                             data-src="img/catalog/876509/876509_0.png"
+                                             data-articul="876509"
+                                             data-name="ninebot_mini_pro_white"
+                                             data-title="White">
+
+                                        </div>
+                                        <div class="color-ball"
+                                             style="background-color: #1f1e21; border: 1px solid #545454;"
+                                             data-src="img/catalog/876508/876508_0.png"
+                                             data-articul="876508"
+                                             data-name="ninebot_mini_pro_black"
+                                             data-title="Black">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear-row order-line">
+                                <div class="price left old">12 999 грн.</div>
+                                <div class="price left">11 999 грн.</div>
+                                <a class="left order-2 img-button popup&#45;&#45;show" href="#order" data-modal=""
+                                   data-catalog-item-articul="SB10pro-Fire">Заказать</a></div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    itemsColorGalleryImages["ninebot_mini_pro_white"] = {};
+                    itemsColorGalleryImages["ninebot_mini_pro_white"].main = "img/catalog/876509/876509_0.png";
+                    itemsColorGalleryImages["ninebot_mini_pro_white"].gallery = [];
+                    itemsColorGalleryImages["ninebot_mini_pro_white"].gallery.push("img/catalog/876509/876509_1.jpg");
+                    itemsColorGalleryImages["ninebot_mini_pro_white"].gallery.push("img/catalog/876509/876509_2.jpg");
+                    itemsColorGalleryImages["ninebot_mini_pro_white"].gallery.push("img/catalog/876509/876509_3.jpg");
+                    itemsColorGalleryImages["ninebot_mini_pro_white"].gallery.push("img/catalog/876509/876509_4.jpg");
+                    itemsColorGalleryImages["ninebot_mini_pro_white"].gallery.push("img/catalog/876509/876509_5.jpg");
+
+
+                    itemsColorGalleryImages["ninebot_mini_pro_black"] = {};
+                    itemsColorGalleryImages["ninebot_mini_pro_black"].main = "img/catalog/876508/876508_0.png";
+                    itemsColorGalleryImages["ninebot_mini_pro_black"].gallery = [];
+                    itemsColorGalleryImages["ninebot_mini_pro_black"].gallery.push("img/catalog/876508/876508_1.jpg");
+                    itemsColorGalleryImages["ninebot_mini_pro_black"].gallery.push("img/catalog/876508/876508_2.jpg");
+                    itemsColorGalleryImages["ninebot_mini_pro_black"].gallery.push("img/catalog/876508/876508_3.jpg");
+                    itemsColorGalleryImages["ninebot_mini_pro_black"].gallery.push("img/catalog/876508/876508_4.jpg");
+                    itemsColorGalleryImages["ninebot_mini_pro_black"].gallery.push("img/catalog/876508/876508_5.jpg");
+                </script>
+            </div>
+            <div class="cat-nav inline-row">
+                <div class="layout current"><p>SB U3 - 6,5"</p></div>
+                <div class="layout"><p>SB U3 - 6,5" LED</p></div>
+                <div class="layout"><p>SB lambo U6 - 8" LED</p></div>
+                <div class="layout"><p>SB U8 - 10"</p></div>
+                <div class="layout"><p>SB All Road - 10,5"</p></div>
+                <div class="layout"><p>SB All Road - 10,5" APP</p></div>
+                <div class="layout"><p>SB KIWANO - 8,5"</p></div>
+                <div class="layout"><p>SB KIWANO - 8,5" APP</p></div>
+                <div class="layout ninebot"><p>Ninebot mini 10,5"</p></div>
+                <div class="layout ninebot"><p>Ninebot mini Pro 10,5"</p></div>
+            </div>
+        </div>
+        <div class="row podl">
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+</section>
+
+<section id=predl class="template">
+    <div class="wrap"><h2 class="title t-center">Комплектация вашего гироскутера</h2>
+
+        <div class="clear-row">
+            <div class="left"><img src="img/predl_1.png">
+
+                <p class="heading">Упакован в 2 коробки</p>
+
+                <p>1-ая транспортировочная коробка, 2-ая подарочная.</p></div>
+            <div class="left"><img src="img/predl_2.png">
+
+                <p class="heading">Гироскутер</p>
+
+                <p>Мощный, изящный гироскутер. Модель 2017 года</p></div>
+            <div class="left"><img src="img/predl_3.png">
+
+                <p class="heading">Сумка для переноски</p>
+
+                <p>Стильная молодёжная сумка на молнии с наружным карманчиком, с лямками для переноса на спине</p></div>
+            <div class="left"><img src="img/predl_4.png">
+
+                <p class="heading">Зарядное устройство</p>
+
+                <p>Универсальное ЗУ позволит быстро выполнить заряд батареи от обычной сети 220 вольт.</p></div>
+            <div class="left"><img src="img/predl_5.png">
+
+                <p class="heading">Мощные колонки</p>
+
+                <p>Качественный и чистый звук! Поддержка любого телефона с Bluetooth!</p></div>
+            <div class="left"><img src="img/predl_6.png">
+
+                <p class="heading">Инструкция на русском</p>
+
+                <p>Инструкция и сервисная книжка на русском языке!</p></div>
+            <div class="left"><img src="img/remote-control.png">
+
+                <p class="heading">Пульт ДУ</p>
+
+                <p>Пульт-брелок для управления гироскутером</p></div>
+            <div class="left"><img src="img/predl_9.png">
+
+                <p class="heading">Подарок</p>
+
+                <p>Закажите сейчас и получите Powerbank в подарок!</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="accessories" class="template black-bg landingItem">
+    <div class="wrap"><h2 class="title t-center">Посмотрите, вам это пригодится</h2>
+
+        <div class="inline-row">
+            <div class="product-item"><a class="preview" href="#powerbank" data-modal=""><img
+                    src="img/accessory/powerbank/powerbank_preview.jpg"></a>
+
+                <div class="clear-row desc"><p class="left">Powerbank<br>Xiaomi</p>
+
+                    <div class="price right">450 грн.</div>
+                </div>
+                <a class="img-button order-2" href="#powerbank" data-modal="">Подробнее</a></div>
+            <div class="product-item"><a class="preview" href="#protection" data-modal=""><img
+                    src="img/accessory/protection/protection_preview.jpg"></a>
+
+                <div class="clear-row desc"><p class="left">Набор<br>защиты</p>
+
+                    <div class="price right">500 грн.</div>
+                </div>
+                <a class="img-button order-2" href="#protection" data-modal="">Подробнее</a></div>
+            <div class="product-item"><a class="preview" href="#stick_accessory" data-modal=""><img
+                    src="img/accessory/remote/remote_preview.jpg"></a>
+
+                <div class="clear-row desc"><p class="left">Bluetooth<br>пульт ДУ</p>
+
+                    <div class="price right">150 грн.</div>
+                </div>
+                <a class="img-button order-2" href="#stick_accessory" data-modal="">Подробнее</a></div>
+            <div class="product-item hidden"><a class="preview" href="#battery_noname_accessory" data-modal=""><img
+                    src="img/accessory/battery/battery_preview.jpg"></a>
+
+                <div class="clear-row desc"><p class="left">Аккумулятор<br>Китай</p>
+
+                    <div class="price right">2 200 грн.</div>
+                </div>
+                <a class="img-button order-2" href="#battery_noname_accessory" data-modal="">Подробнее</a></div>
+        </div>
+        <div class="t-center" style="display:none"><a href="javascript:void(0)" class="podrb" id="an-button" data-count="4"
+                                                      data-current="2" data-dir="next">Показать остальные аксессуары</a></div>
+    </div>
+</section>
+
+<section class="blue-line template nth2">
+    <div class="wrap">
+        <div class="clear-row"><p class="info left"><span class="bold">Нет времени разбираться?</span> Свяжитесь с нами!</p>
+            <a class="right img-button call-button popup&#45;&#45;show" href="#call" data-modal="">Заказать звонок</a></div>
+    </div>
+</section>
+
+<section id="steps" class="template">
+    <div class="wrap"><h2 class="title t-center">Между вами и вашим гироскутером<br><span>всего 3 шага</span></h2>
+
+        <div class="clear-row">
+            <div class="left t-center"><img src="img/step_1.png">
+
+                <p class="heading">Оформление заявки</p>
+
+                <p>Заполнение любой формы на сайте или звонок на номер<br><span class="ringo-kyivstar"><a class="tel"
+                                                                                                          href="tel:+">+38
+                    (097) 527-27-83</a></span><br><span class="ringo-vodafone"><a class="tel" href="tel:+">+38 (099)
+                    611-43-18</a></span></p></div>
+            <div class="left t-center"><img src="img/step_2.png">
+
+                <p class="heading">Подтверждение заказа</p>
+
+                <p>Согласование варианта оплаты, адреса доставки и контактов получателя</p></div>
+            <div class="left t-center"><img src="img/step_3.png">
+
+                <p class="heading">Получение гироскутера</p>
+
+                <p>Оплата при получении в отделении Новой Почты. Пункт самовывоза в Харькове.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="comments" class="template">
+    <div class="wrap">
+        <div><h2 class="title">Тысячи родителей и детей счастливы с гироскутерами GiroGO</h2>
+
+            <div class="comments-list">
+                <div class="comment active"><p class="heading">Отличный продукт и отличный сервис!</p>
+
+                    <p>Отличный аппарат! Уже второй день катаемся по квартире всей семьёй. И это на одной зарядке. Взяли
+                        с колёсами 10" - большой, мощный, классный! Ждём не дождёмся, когда можно будет выйти на
+                        асфальт.<br>Ребята из компании были внимательны, звонили, интересовались, согласовали, уточняли.
+                        Отличный продукт и отличный сервис. Спасибо!</p>
+
+                    <p class="author"><a href="#"><img
+                            src="img/portraits/portrait_1.png"><span>Андрей Першин</span></a>
+                    </p></div>
+                <div class="comment"><p class="heading">Хорошая работа!!!!</p>
+
+                    <p>Добрый вечер! Хотела бы оставить положительный отзыв о Вашей компании. Очень понравилось
+                        сотрудничество с вами всем довольна. Прислали все как обещали в Запорожье за 2 дня. Спасибо вам
+                        большое, от меня и от ребенка.😊😊😊😊</p>
+
+                    <p class="author"><a href="#"><img
+                            src="img/portraits/portrait_2.png"><span>Сергей Мамонтов</span></a>
+                    </p></div>
+                <div class="comment"><p class="heading">Продавец консультант работает на 5+!</p>
+
+                    <p>Всем доброго дня! Посылка пришла урааа!!!! Гироскутер очень красивый, цвет чёрная молния,
+                        продавец посоветовал, дочка очень довольна. Музыка достаточно громко звучит, думаю на улице
+                        будет хорошо слышно!!! Продавец консультант работает на 5+))))))))</p>
+
+                    <p class="author"><a href="#"><img
+                            src="img/portraits/portrait_3.png"><span>Ирина Вакуленко</span></a>
+                    </p></div>
+                <div class="comment"><p class="heading">Огромнейшее СПАСИБО за поддержку и гироскутер!</p>
+
+                    <p>Хочу сказать огромнейшее СПАСИБО за поддержку и сам собственно гироскутер.)</p>
+
+                    <p class="author"><a href="#"><img
+                            src="img/portraits/portrait_4.png"><span>Аня Кондратюк</span></a>
+                    </p></div>
+            </div>
+            <ul class="nav">
+                <li class="left"><img
+                        src="img/chevron_left.png">
+                </li>
+                <li class="right"><img
+                        src="img/chevron_right.png">
+                </li>
+            </ul>
+            <a href="https://vk.com/topic-55354966_35072082" target="_blank">Пишите ваши отзывы здесь</a></div>
+    </div>
+</section>
+
+<section id="proiz" class="template landingItem">
+    <div class="wrap"><h2 class="title t-center">Производство гироскутеров</h2>
+
+        <div class="row">
+            <div class="cell">
+                <div class="slider">
+                    <div class="item-image-container proiz-for"><span class="left" data-item="0"></span> <img
+                            class="item-image" src="img/proiz/1.jpg"> <span class="right" data-item="2"></span></div>
+                    <div class="item-thumbs proiz-nav">
+                        <div class="item-thumbs-container inline-row" data-items="5" data-current-item="0">
+                            <div class="item-thumb active" data-src="img/proiz/1.jpg" data-item="1"><img
+                                    src="img/proiz/1_small.jpg"></div>
+                            <div class="item-thumb" data-src="img/proiz/2.jpg" data-item="2"><img src="img/proiz/2_small.jpg">
+                            </div>
+                            <div class="item-thumb" data-src="img/proiz/3.jpg" data-item="3"><img src="img/proiz/3_small.jpg">
+                            </div>
+                            <div class="item-thumb" data-src="img/proiz/4.jpg" data-item="4"><img src="img/proiz/4_small.jpg">
+                            </div>
+                            <div class="item-thumb" data-src="img/proiz/5.jpg" data-item="5"><img src="img/proiz/5_small.jpg">
+                            </div>
+                            <div class="item-thumb" data-src="img/proiz/6.jpg" data-item="6"><img src="img/proiz/6_small.jpg">
+                            </div>
+                            <div class="item-thumb" data-src="img/proiz/7.jpg" data-item="7"><img src="img/proiz/7_small.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <ul class="bx-animate">
+                    <li class="bx-animate-item"><p>
+                        <span>Продукция лучших заводов Китая для европейских потребителей</span></p></li>
+                    <li class="bx-animate-item"><p><span>Более 160 часов дополнительных тестовых испытаний в критических условях работы</span>
+                    </p></li>
+                    <li class="bx-animate-item"><p><span>Наши товары неоднократно становиласть победителями среди инновационных продуктов</span>
+                    </p></li>
+                    <li class="bx-animate-item"><p><span>Современные производственные мощности и высокие стандарты качества на комплектующие</span>
+                    </p></li>
+                    <li class="bx-animate-item"><p><span>Качество продукции подтверждено многочисленными сертификатами, каждая партия проверяется специалистами</span>
+                    </p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="construction" class="template landingItem blue-bg">
+    <div class="wrap"><h2 class="title t-center">Особенности конструкции<br>гироскутера</h2>
+
+        <div class="os-block"><img src="img/Layer-min.png">
+
+            <div class="point hidden" data-rtl="false">
+                <div class="message">
+                    <div class="name">Защита аккумулятора</div>
+                    <p>Жестко фиксирует аккумуляторную батарею. Дополнительная пыле-влагозащита.</p></div>
+            </div>
+            <div class="point" data-rtl="false">
+                <div class="message">
+                    <div class="name">Статор-колесо</div>
+                    <p>Неподвижная часть мотор-колеса, основная часть бесколлекторного электродвигателя постоянного тока
+                        с датчиками Холла.</p></div>
+            </div>
+            <div class="point" data-rtl="false">
+                <div class="message">
+                    <div class="name">Ротор-колесо</div>
+                    <p>Подвижная часть мотор-колеса, безкамерная покрышка. Высокоэффективные неодимовые магниты</p>
+                </div>
+            </div>
+            <div class="point" data-rtl="false">
+                <div class="message">
+                    <div class="name">Корпус</div>
+                    <p>Усиленный пластиковый корпус</p></div>
+            </div>
+            <div class="point" data-rtl="false">
+                <div class="message">
+                    <div class="name">Рама</div>
+                    <p>Выполнена из силумина (сплав алюминия с кремнием). Несет основную нагрузку</p></div>
+            </div>
+            <div class="point" data-rtl="false">
+                <div class="message">
+                    <div class="name">Электроника</div>
+                    <p>Печатные платы с процессором, микроконтроллерами и датчиками. Служат для балансировки и
+                        передвижения</p></div>
+            </div>
+            <div class="point" data-rtl="true">
+                <div class="message">
+                    <div class="name">Корпус</div>
+                    <p>Усиленный пластиковый корпус</p></div>
+            </div>
+            <div class="point" data-rtl="true">
+                <div class="message">
+                    <div class="name">Акумулятор</div>
+                    <p>Литий-ионный аккумулятор состоящий из 20 элементов (банок)</p></div>
+            </div>
+            <div class="point" data-rtl="true">
+                <div class="message">
+                    <div class="name">Крышка мотор-колеса</div>
+                    <p>Служит для защиты от пыли и влаги. Имеет японскую манжету</p></div>
+            </div>
+            <div class="point" data-rtl="true">
+                <div class="message">
+                    <div class="name">Часть корпуса</div>
+                    <p>Используется для усиления и жесткости корпуса.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="template landingItem">
+    <div class="wrap"><h2 class="title t-center">Вопрос-ответ</h2>
+
+        <div class="quest-list clear-row">
+            <div class="left">
+                <div class="section"><img src="img/faq-1.png"><span>Вопросы по оплате</span></div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">1</div>
+                        <p>Могу ли я оплатить заказ по факту получения?</p></div>
+                    <div class="desc">Да, конечно. Мы уверены в своих гироскутерах на 100% и поэтому мы одни из немногих,
+                        кто предлагает оплату по факту получения (наложенным платежом).
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">2</div>
+                        <p>Какие у меня гарантии, если я оплачу на карту или через отделения банка?</p></div>
+                    <div class="desc">Перед оплатой на электронную почту мы Вам отправляем счет в котором указаны все наши
+                        реквизиты. После оплаты у вас на руках будут все подтверждающие документы, что вы произвели
+                        платеж - это ваша гарантия безопасности!
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">3</div>
+                        <p>Если я оплачу на карту Приватбанка, вы сможете отправить мой заказ быстрее?</p></div>
+                    <div class="desc">Оплаченные заказы в приоритете! В большинстве случаев мы отправляем заказ в день
+                        оплаты, для этого нужно оплатить до 15.00 текущего дня.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">4</div>
+                        <p>Есть ли какие-то скрытые платежи? На сайте указана окончательная цена?</p></div>
+                    <div class="desc">Никах скрытых платежей! Все прозрачно и честно! На сайте указана окончательная цена!
+                        Имеете ввиду, если вы выбираете способ оплаты - по факту получения (наложенный платеж), то
+                        транспортная компания взымает комиссию за перевод денег в размере 2% + 20грн. от стоимости (это
+                        как правило около 150-200 грн.).<br>В чеке у вас будет 2 пункта:<br>1. стоимость гироскутера,
+                        как на сайте;<br>2. комиссия транспортной компании.<br>Чтобы не переплачивать комиссию удобнее
+                        оплатить на карту Приватбанка.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">5</div>
+                        <p>Я живу не в Харькове, но хочу купить гироскутер у вас, вы меня не обманете?</p></div>
+                    <div class="desc">Мы заботимся о своей репутации и очень дорожим ей, поэтому мы никого не обманываем.
+                        Если вы живете не в Харькове, и хотите заказать гироскутер, вы можете оплатить заказ при
+                        получении, и не бояться, что вам придёт некачественный продукт. С каждым заказом мы вкладываем
+                        товарный чек и гарантийный талон.
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="section"><img src="img/faq-2.png"><span>Вопросы по доставке</span></div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">1</div>
+                        <p>Сколько стоит доставка до моего города/населенного пункта?</p></div>
+                    <div class="desc">Стоимость доставки составляет 70-100грн в зависимости от вашего региона. Доставка в
+                        более 700 населенных пунктов по Украине! Исключения составляют только удаленные населенные
+                        пункты, в которых нет отделений Новой Почты, по ним условия достаки уточняйте по телефону.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">2</div>
+                        <p>Когда я получу свой гироскутер?</p></div>
+                    <div class="desc">После заказа, как правило на следующий день, вы получите смс сообщение с трекером
+                        для отслеживания вашего груза. Доставка по Харькову осуществляется в тот же, или на следующий
+                        день после оплаты, по Украине - до 3 дней.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">3</div>
+                        <p>Как я узнаю, что вы уже отправили мой заказ?</p></div>
+                    <div class="desc">После заказа мы высылаем вам информирующее смс сообщение, что груз отправлен, а
+                        также трекер, по которому в личном кабинете транспортной компании, вы можете отследить
+                        местонахождение вашего груза.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">4</div>
+                        <p>Как вы обеспечиваете сохранность и безопасность груза?</p></div>
+                    <div class="desc">Каждый гироскутер упакован в 2 коробки плюс все грузы мы страхуем, поэтому ваш груз
+                        в полной безопасности!
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">5</div>
+                        <p>Что мне делать если гироскутер прийдет недалежащего качества, например, с треснутым
+                            корпусом?</p></div>
+                    <div class="desc">Если вы в транспортной компании, то никакие бумажки не подписывать и срочно звонить
+                        нам! Мы отправили более 3000 гироскутеров и из этих 3000 всего один оказался треснутым, когда
+                        клиент заказал адресную доставку.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">6</div>
+                        <p>Могу ли я проверить работоспособность гироскутера при его получении?</p></div>
+                    <div class="desc">Да, конечно! При получении вы можете распечатать коробку, достать гироскутер,
+                        включить его, проверить зарядку, музыку, комплектацию, внешний вид.
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="section"><img src="img/faq-3.png"><span>Вопросы по гарантии</span></div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">1</div>
+                        <p>У Вас гарантия только на колеса, как у всех?</p></div>
+                    <div class="desc">Мы даем полную гарантию. Гарантия распространяется на весь гироскутер. Мы уверены в
+                        качестве своих гироскутеров! Но даже после завершения гарантийного срока мы вас не оставим на
+                        едине с проблемой (в случае если она, конечно, появится).
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">2</div>
+                        <p>У вас гарантия один год или 14 дней?</p></div>
+                    <div class="desc">Гарантия на наши гироскутеры составляет 365 дней с момента получения гироскутера.
+                        Все наши гироскутеры запломбированы и имеют уникальные номера, по которым можно его
+                        индентифицировать.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">3</div>
+                        <p>А что мне делать если гироскутер сломается?</p></div>
+                    <div class="desc">Не переживать и позвонить нам. Наши менеджеры переключат Вас на сервисный центр и
+                        наши специалисты вам помогут! В 90% случаев поломку можно исправить удаленно!
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">4</div>
+                        <p>Вы удаленно консультируете по гарантии и ремонту? А поможете если я не смогу, например
+                            включить музыку?</p></div>
+                    <div class="desc">Да, консультируем! Также поможем включить музыку, расскажем как подсоединить
+                        зарядное устройство, при необходимости научим кататься на гироскутере).
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">5</div>
+                        <p>А можно мне самому разобрать гироскутер?</p></div>
+                    <div class="desc">Все наши гироскутеры запломбированы, поэтому при разборке вы сорвете гарантийные
+                        пломбы, тем самым автоматически снимите свой гироскутер с гарантийного обслуживания.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">6</div>
+                        <p>А если мне гироскутер не понравится, могу ли я его поменять?</p></div>
+                    <div class="desc">Мы работаем честно "в белую", в полном соответствии с законодательством Украины.
+                        Если прошло не более 14 дней с момента покупки, то да, можно его или поменять или вернуть за
+                        него деньги! Обращаем ваше внимание что возврат и замена товара производится только при наличии
+                        всех документов (товарный чек, гарантийный талон), упаковки, и при отсутствии любых видимых
+                        повреждений, а также следов эксплуатации.
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="section"><img src="img/faq-4.png"><span>Эксплуатация</span></div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">1</div>
+                        <p>Сколько по времени я смогу на нем кататься?</p></div>
+                    <div class="desc">Время катания гироскутера зависит от условий эксплуатации его. Если на гироскутере
+                        будет кататься ребенок (например, вес его будет 30кг) и будет кататься по ровной поверхности при
+                        температуре +15-20 градусов по Цельсию, не будет делать резких разгонов/тормозов, то прокатается
+                        3-5 часов. Если встанет на гироскутер взрослый человек (например, 100 кг) и поедет в горку, то
+                        гироскутера хватит на 20-40 мин (в зависимости от крутости горки).
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">2</div>
+                        <p>Как вообще он работает? Внутри стоят электромоторы?</p></div>
+                    <div class="desc">Да, все верно. Внутри гироскутера находится электроника, которая включает гироскутер
+                        в зависимости от наклона его к плоскости (земле), также там стоят 2 электромотора (мощность их
+                        зависит от модели гироскутера) и качественная аккумуляторная батарея которая все это питает.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">3</div>
+                        <p>Сколько мне нужно заряжать гироскутер? Я читал в интернете что заряжать больше 3-х часов
+                            опасно!</p></div>
+                    <div class="desc">В зависимости от выходного тока вашего зарядного устройства (у нас зарядки с выходом
+                        2А). Емкость аккумулятора составляет 4,4Аh, нашей зарядкой (4,4/2=2,2) его можно зарядить за
+                        два-два с половиной часа. Если вы купили качественный гироскутер, например, у нас, то ам не
+                        нужно беспокоиться о времени зарядки, у нас стоит защита от перезаряда, поэтому как только
+                        гироскутер зарядится, зарядка автоматически перестанет его заряжать.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">4</div>
+                        <p>Музыка громко играет? Как включить музыку?</p></div>
+                    <div class="desc">Музыка играет очень громко! Многие наши клиенты используют гироскутер как
+                        музыкальный центр. Включить музыку можно через телефон или планшет. Подключаетесь к гироскутеру
+                        по каналу блютус (как правило в телефоне это -> настройки -> блютус -> поиск устройств) и
+                        включаете музыку на телефоне или планшете. Все! Наслаждаетесь качественной и громкой музыкой!
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">5</div>
+                        <p>А что лучше с приложением или без?</p></div>
+                    <div class="desc">С приложением (у нас это только Tao-tao) у Вас появляется возможность более тонко
+                        настроить гироскутер. Если покупаете гироскутер для ребенка, то лучше взять с приложением, т.к.
+                        через приложение, как минимум, вы сможете ограничить максимальную скорость, а дети, как мы
+                        знаем, они без страха и могут кататься на максимальных скоростях (около 20км/ч) это не всегда
+                        бывает безопасно.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">6</div>
+                        <p>Если мой вес 107 кг, я смогу кататься на нем??</p></div>
+                    <div class="desc">Да. Максимальный вес который может выдержать гироскутер составляет 120кг. Если вы
+                        будете гироскутер эксплуатировать бережно, а не прыгать, например, на гироскутере с бардюров, то
+                        гироскутер прослужит вам без поломок несколько лет.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">7</div>
+                        <p>Можно ли кататься на гироскутере зимой или в дождь?</p></div>
+                    <div class="desc">Можно, но не на всех. Обязательно уточняйте этот вопрос у менеджеров. Наши
+                        гироскутеры дополнительно обработаны от пыли и влаги (степень защиты IP 54).
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">8</div>
+                        <p>Что еще мне нужно знать об эксплуатации гироскутера?</p></div>
+                    <div class="desc">Мы подготовили для вас универсальную инструкцию по эксплуатации гироскутера, которую
+                        можно получить отправив запрос <a class="link" href="#user_manual">здесь</a></div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="section"><img src="img/faq-5.png"><span>Вопросы про детей</span></div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">1</div>
+                        <p>Моему ребенку 5 лет, он сможет уже кататься на гироскутере?</p></div>
+                    <div class="desc">Важен не возвраст, а вес ребенка. Полноценно сможет кататься ребенок, вес которого
+                        больше 25 кг. Хотя у нас есть родители, которые "утежеляют" ребенка, например, песочными
+                        мешочками на ноги. Смешно? Да, но такие случаи реально встречаются...
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">2</div>
+                        <p>Понравится ли ребенку гироскутер?</p></div>
+                    <div class="desc">Вряд ли найдется ребенок, которому не понравится гироскутер, дети просто в восторге
+                        от него.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">3</div>
+                        <p>А вдруг гироскутер разрядится в центре города, как его ребенок принесет домой??</p></div>
+                    <div class="desc">Во всех наших гироскутерах установлена 2-х индикационная система (световая и
+                        звуковая) оповещения о разряде аккумулятора. Работает это так: 1. гироскутер полностью заряжен,
+                        горит зеленая индикация. 2. Гироскутер разряжен до 40%, зеленый индикатор начинает мигать. 3.
+                        Гироскутер разряжен на 20%, загорается красный индикатор и гироскутер начинает издавать звуковой
+                        сигнализирующий сигнал (этого еще хватит на 2-3 км). Расскажите ребенку об этом и гироскутер не
+                        подвведет ребенка в самый ответственный момент.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">4</div>
+                        <p>Для ребенка лучше выбрать гироскутер с маленькими или с большими надувными колесами?</p>
+                    </div>
+                    <div class="desc">Тут все зависит от повверхности по которой будете кататься, если это ровная
+                        поверхность (например, кафельная плитка в торговых центрах) то лучше подойдет гироскутер с
+                        резиновыми колесами, если же вы планируете выезжать на улицу, то тогда только гироскутер с
+                        надувными колесами, т.к. он будет мягче ехать по неровностям, ноги не будут болеть, также
+                        огромным плюсом будет являться высокий клириенс.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">5</div>
+                        <p>Какая нужна защита для катания на гироскутере?</p></div>
+                    <div class="desc">Подойдет велосипедная защита или защита для катания на роликах. Мы настоятельно
+                        рекомендуем использовать защиту! Безопасность и здоровье ребенка превыше всего!
+                    </div>
+                </div>
+            </div>
+            <div class="left">
+                <div class="section"><img src="img/faq-6.png"><span>Комплектация</span></div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">1</div>
+                        <p>Что входит в комплект гироскутера? Нужно ли что-то еще докупать?</p></div>
+                    <div class="desc">В комплектацию гироскутера входит: фирменная упаковка, гироскутер, зарядное
+                        устройство, сумка для транспортировки, инструкция и сервисная книжка. Также в каждом гироскутере
+                        установлена мощная колонка подключаемая по bluetooth каналу и яркие светодиодные фары (ходовые
+                        огни, 2 или 4 в зависимости от модели)
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">2</div>
+                        <p>Какие у вас стоят аккумуляторы? Я читал(а), что аккумуляторы должны быть только Samsung!</p>
+                    </div>
+                    <div class="desc">При выборе аккумуляторов нужно делать акцент не на производителе, а на емкости
+                        аккумулятора (должна быть не менее 4аh) и на количестве циклов заряд/разряд. Известный
+                        производитель - это залог качества. В наших гироскутерах установлены аккумуляторы с питательными
+                        элементами Samsung, произведенные “Shenzhen Huanyuyuan technology Co., Ltd”.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">3</div>
+                        <p>Почему все пишут что должно быть 3 платы? У вас сколько плат?</p></div>
+                    <div class="desc">У нас 8 плат, это 1-материнска плата, 2,3-платы гироскопа левого и правого колеса,
+                        4-усилитель музыкальной колонки, 5,6,7,8 - 4 платы ходовых огней. 2 года назад (начало 2015)
+                        было актульно 2 или 3 платы, тогда еще можно было встретить дешевые копии с 2-мя платами, сейчас
+                        в 99 случаях из 100 гироскутеры идут с 3-мя и большим количеством плат.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">4</div>
+                        <p>У вас 4 или 2 ходовых огня? Каки цветом светят фары?</p></div>
+                    <div class="desc">В основном идут с 4-мя ходовыми огнями, хотя есть модели и с 2-мя. Лучше этот вопрос
+                        уточнить у наших менеджеров. Цвет фар - синий, цвет дополнительной LED подсветки на крыльях -
+                        разноцветный.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">5</div>
+                        <p>Какую функцию выполняет пульт-брелок? Зачем он вообще нужен?</p></div>
+                    <div class="desc">Это больше брелок нежели пульт. Там 4 кнопки, 1-ая включить гироскутер (включить
+                        гироскутер можно только если гироскутер находится в спящем режиме, т.е. включить можно
+                        гироскутер в течение 5-ти минут если мы выключили гиросткуре пультом и он находится в спящем
+                        режиме), 2-ая кнопка выключить гироскутер, 3-я издать короткий звуковой сигнал, 4-ая издать
+                        долгий звуковой сигнал. ВАЖНО! Пульт от гироскутера работает на расстоянии 50-80 см от
+                        гироскутера и подходит не ко всем моделям.
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">6</div>
+                        <p>Как упакованы ваши гироскутеры?</p></div>
+                    <div class="desc">Каждый гироскутер упакован в пенопласт и в 2 коробки (подарочная и
+                        транспортировочная), также каждый гироскутер мы упаковываем палетным бортом (это прочный
+                        деревянный контейнер для перевозки хрупких, крупногабаритных и нестандартных грузов). Плюс все
+                        грузы мы страхуем, поэтому Ваш груз в полной безопасности!
+                    </div>
+                </div>
+                <div class="quest-block">
+                    <div class="header">
+                        <div class="num">7</div>
+                        <p>Как отличить оригинальные гироскутере от подделок?</p></div>
+                    <div class="desc">Оригинальных или неоригинальных гироскутеров не существуют. Могут быть только
+                        оригинальные запчасти, но ход Ваших мыслей я понял, Вам нужно выбрать качественную и надежную
+                        игрушку. Чтобы рассписывать все отличия не хватит и нескольких страниц, поэтому давайте поступим
+                        проще. 8(800)350-10-58 вот наш телефон (звонки бесплатные), позвоните и мы Вас проконсультируем.
+                        Бесплатно, просто так! Вы можете быть в любом магазине, выбирать гироскутер и общаться с нами.
+                        Зачем это нам? Потому что мы уверены,вы или смотрите наши гироскутеры (которые мы реализуем
+                        оптом) или скорее всего вы смотрите дешевую подделку которая вам и бесплатно не нужна (т.к.
+                        дешевые подделки могут произвольно воспламеняться, да да, могут просто так взять и загореться,
+                        посмотрите на youtube, там много таких роликов)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="opt" class="blue-line template nth2">
+    <div class="wrap">
+        <div class="clear-row"><p class="info left"><span class="bold">Гироскутеры оптом</span> со склада в Харькове</p><a
+                class="right img-button call-button" target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfFS4DF-TB0PIznJKp34jdTRsrXjnUNk8vNvxdVMEHlSg8VSA/viewform">Узнать
+            условия</a></div>
+    </div>
+</section>
+
+<div id="map"></div>
+&lt;!&ndash;Facebook SDK JavaScript&ndash;&gt;
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<section id="soc_block" class="template" style="padding: 40px 0;">
+    <div class="wrap t-center"><h2 class="title t-center">Мы в соц. сетях</h2>
+
+        <div class="clear-row">
+            <div class="left" style="padding: 0 15px; box-sizing: border-box;">
+                <iframe src="//widget.stapico.ru/?q=girogoo&s=100&w=2&h=3&b=1&p=5&title=Girogo.com.ua&effect=0"
+                        allowtransparency="true" frameborder="0" scrolling="no"
+                        style="border:none;overflow:hidden;width:250px; height: 490px"></iframe>
+                &lt;!&ndash;stapico - stapico.ru&ndash;&gt;</div>
+            <div class="left" style="padding: 0 15px; box-sizing: border-box;">
+                <iframe src="//widget.stapico.ru/?q=girogoo&s=100&w=2&h=3&b=1&p=5&title=Girogo.com.ua&effect=0"
+                        allowtransparency="true" frameborder="0" scrolling="no"
+                        style="border:none;overflow:hidden;width:250px; height: 490px"></iframe>
+                &lt;!&ndash;stapico - stapico.ru&ndash;&gt;</div>
+            <div class="left" style="; padding: 0 15px; box-sizing: border-box;">
+                <iframe src="//widget.stapico.ru/?q=girogoo&s=100&w=2&h=3&b=1&p=5&title=Girogo.com.ua&effect=0"
+                        allowtransparency="true" frameborder="0" scrolling="no"
+                        style="border:none;overflow:hidden;width:250px; height: 490px"></iframe>
+                &lt;!&ndash;stapico - stapico.ru&ndash;&gt;</div>
+        </div>
+    </div>
+</section>
+
+<section id="manager" class="template black-bg">
+    <div class="wrap t-center"><h2 class="title">Остались вопросы?</h2><a class="img-button manager popup&#45;&#45;show"
+                                                                          href="#answer" data-modal="">Задать их
+        сотруднику</a></div>
+</section>
+
+<footer class="template">
+    <div class="wrap">
+        <p>г. Харьков, Московский проспект 257<br>Офисный центр "Кондиционер"<br><span class="ringo-kyivstar"><a class="tel"
+                                                                                                                 href="tel:+">+38
+            (097) 527-27-83</a></span><br><span class="ringo-vodafone"><a class="tel" href="tel:+">+38 (099)
+            611-43-18</a></span><br>ФЛП Гуманцов Вячеслав Владимирович<br>E-mail: <a class="__cf_email__"
+                                                                                     href="/cdn-cgi/l/email-protection"
+                                                                                     data-cfemail="630a0d050c23040a110c040c4d000c0e4d1602">[email&#160;protected]</a>
+            <script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */
+            !function (t, e, r, n, c, a, p) {
+                try {
+                    t = document.currentScript || function () {
+                                for (t = document.getElementsByTagName('script'), e = t.length;;)if (t[e].getAttribute('data-cfhash'))return t[e]
+                            }();
+                    if (t && (c = t.previousSibling)) {
+                        p = t.parentNode;
+                        if (a = c.getAttribute('data-cfemail')) {
+                            for (e = '', r = '0x' + a.substr(0, 2) | 0, n = 2; a.length - n; n += 2)e += '%' + ('0' + ('0x' + a.substr(n, 2) ^ r).toString(16)).slice(-2);
+                            p.replaceChild(document.createTextNode(decodeURIComponent(e)), c)
+                        }
+                        p.removeChild(t)
+                    }
+                } catch (u) {
+                }
+            }()
+            /* ]]> */</script>
+        </p>
+        <p>
+        <ul class="inline-row t-center">
+            <li><a href="https://vk.com/gogiro" target="_blank"><img src="img/soc/1-min.png"></a></li>
+            <li><a href="https://www.facebook.com/GiroGo.com.ua/" target="_blank"><img src="img/soc/2-min.png"></a></li>
+            <li><a href="https://instagram.com/girogoo" target="_blank"><img src="img/soc/5.png"></a></li>
+        </ul>
+        </p></div>
+</footer>
+<!--Всплывающие окна-->
+<div class="modal-bg hidden"></div>
+<!--Спасибо за заявку-->
+<div id="thank-you" class="modal modal-close hidden" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close">x</div>
+        <p class="modal-heading text-bold">Спасибо за заявку</p>
+
+        <p class="modal-content">Мы свяжемся с вами в ближайшее время</p><a class="modal-button btn-4 modal-close" href="#">Вернуться
+        на сайт</a></div>
+</div>
+<!--Оформить заказ-->
+<div id="order" class="modal modal-close hidden" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <p class="modal-heading text-bold">Оформить заказ</p>
+
+        <div class="modal-form">
+            <form id="js-order-form" name="request-form">
+                <div class="input-block img3"><input id="order-name" type="text" name="name" placeholder="Введите Ваше имя">
+                </div>
+                <div class="input-block img3 hidden"><input id="order-address" type="text" name="address"
+                                                            placeholder="Введите Ваш адрес"></div>
+                <div class="input-block img4"><input id="order-phone" type="text" name="phone"
+                                                     placeholder="Введите Ваш телефон"
+                                                     title="Введите номер телефона в формате: +38 (XXX) XXX-XX-XX"
+                                                     pattern=^[\d\+\s\-\(\)]+$ required="required"></div>
+                <input type="hidden" name="type" value="Заказ"> <input class="js-articul-data" type="hidden" name="articul"> <input
+                    class="js-color-data" type="hidden" name="color"> <input class="js-articul-header-data" type="hidden"
+                                                                             name="articul_header"> <input type="hidden"
+                                                                                                           name="action"
+                                                                                                           value="order_catalog">
+                <button type="submit">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--Оформить заказ аксессуара-->
+<div id="order_accessory" class="modal modal-close hidden" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <p class="modal-heading text-bold">Оформить заказ</p>
+
+        <div class="modal-form">
+            <form id="js-order-accessory-form" name="request-form">
+                <div class="input-block img3"><input type="text" name="name" placeholder="Введите Ваше имя"></div>
+                <div class="input-block img3 hidden"><input type="text" name="address" placeholder="Введите Ваш адрес">
+                </div>
+                <div class="input-block img4"><input type="text" name="phone" placeholder="Введите Ваш телефон"
+                                                     title="Введите номер телефона в формате: +38 (XXX) XXX-XX-XX"
+                                                     pattern="^[\d\+\s\-\(\)]+$" required="required"></div>
+                <input type="hidden" name="type" value="Заказ"> <input class="js-articul-data" type="hidden" name="articul"> <input
+                    type="hidden" name="action" value="order_accessory">
+                <button type="submit">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--Заказать звонок-->
+<div id="call" class="modal modal-close hidden" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <p class="modal-heading text-bold">Заказать звонок</p>
+
+        <div class="modal-form">
+            <form name="request-form">
+                <div class="input-block img3"><input id="call-name" type="text" name="name" placeholder="Введите Ваше имя">
+                </div>
+                <div class="input-block img3 hidden"><input id="call-address" type="text" name="address"
+                                                            placeholder="Введите Ваш адрес"></div>
+                <div class="input-block img4"><input id="call-phone" type="text" name="phone"
+                                                     placeholder="Введите Ваш телефон"
+                                                     title="Введите номер телефона в формате: +38 (XXX) XXX-XX-XX"
+                                                     pattern="^[\d\+\s\-\(\)]+$" required="required"></div>
+                <input type="hidden" name="type" value="Звонок"> <input type="hidden" name="action" value="callback">
+                <button type="submit">Заказать</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--Задать вопрос-->
+<div id="answer" class="modal modal-close hidden" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <p class="modal-heading text-bold">Задать вопрос</p>
+
+        <div class="modal-form">
+            <form name="request-form">
+                <div class="input-block img3"><input id="answer-name" type="text" name="name" placeholder="Введите Ваше имя">
+                </div>
+                <div class="input-block img3 hidden"><input id="answer-address" type="text" name="address"
+                                                            placeholder="Введите Ваш адрес"></div>
+                <div class="input-block img4"><input id="answer-phone" type="text" name="phone"
+                                                     placeholder="Введите Ваш телефон"
+                                                     title="Введите номер телефона в формате: +38 (XXX) XXX-XX-XX"
+                                                     pattern="^[\d\+\s\-\(\)]+$" required="required"></div>
+                <div class="input-block img5"><input id="answer-message" name="message" placeholder="Введите Ваш вопрос">
+                </div>
+                <input type="hidden" name="type" value="Вопрос"> <input type="hidden" name="action" value="question">
+                <button type="submit">Задать</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--Аксессуары-->
+<div id="battery_samsung_accessory" class="modal modal-close hidden accessory-item" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <div class="row">
+            <div class="cell">
+                <div class="item-image-block item-image-container"><span class="left"></span> <img
+                        class="item-image width_75 block-center" src="img/accessory/battery/battery_sams_1.jpg"> <span
+                        class="right"></span></div>
+                <div class="item-thumbs clear-row">
+                    <div class="item-thumbs-container inline-row" data-items=4 data-current-item="0">
+                        <div class="item-thumb active" data-src="img/accessory/battery/battery_sams_1.jpg" data-item="1">
+                            <img src="img/accessory/battery/battery_sams_1_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/battery/battery_sams_2.jpg" data-item="2"><img
+                                src="img/accessory/battery/battery_sams_2_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/battery/battery_sams_3.jpg" data-item="3"><img
+                                src="img/accessory/battery/battery_sams_3_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/battery/battery_sams_4.jpg" data-item="4"><img
+                                src="img/accessory/battery/battery_sams_4_preview.jpg"></div>
+                    </div>
+                </div>
+                <div class="price">3 900 грн.</div>
+                >
+            </div>
+            <div class="cell"><p class="modal-heading text-bold"><span>Аккумулятор</span><br>для гироскутера</p>
+
+                <div type="modal-content"><p>Высококачественная Li-ion аккумуляторная батарея для гироскутера емкостью
+                    4400 мАч (158 Вт*ч) 36В. Батарея для гироскутера позволит проехать 15-20 км, срок службы
+                    аккумулятора около <span>700 циклов</span> (заряд-разряд)</p>
+
+                    <p><span>Аккумуляторная батарея применима для:</span><br>-Smart Balance: 6,5, SUV 10, Avatar, AMG,
+                        Transformers, Diamond, 10 APP;<br>-Wmotion: WM-6, WM-7, WM-8, WM-9.</p></div>
+                <div type="line"></div>
+                <p class="modal-content-1"><span>Нет времени разбираться?</span> Свяжитесь с нами!<br><a  class="phone-item"
+                                                                                                          href="#call"
+                                                                                                          data-modal=""
+                                                                                                          data-modal-close-open="#battery_samsung_accessory">Заказать
+                    звонок</a></p></div>
+        </div>
+        <a class="img-button order-2 js-accessory-modal-opener" href="#order_accessory" data-modal=""
+           data-modal-close-open="#battery_samsung_accessory" data-catalog-item-articul="battery_samsung">Заказать</a></div>
+</div>
+<div id=covers_sm10_accessory class="modal modal-close hidden accessory-item" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <div class="row">
+            <div class="cell">
+                <div class="item-image-block item-image-container"><span class="left"></span> <img
+                        class="item-image width_75 block-center" src="img/accessory/covers/covers_1.jpg"> <span
+                        class="right"></span></div>
+                <div class="item-thumbs clear-row">
+                    <div class="item-thumbs-container inline-row" data-items=4 data-current-item="0">
+                        <div class="item-thumb active" data-src="img/accessory/covers/covers_1.jpg" data-item="1"><img
+                                src="img/accessory/covers/covers_1_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/covers/covers_2.jpg" data-item="2"><img
+                                src="img/accessory/covers/covers_2_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/covers/covers_3.jpg" data-item="3"><img
+                                src="img/accessory/covers/covers_3_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/covers/covers_4.jpg" data-item="4"><img
+                                src="img/accessory/covers/covers_4_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/covers/covers_5.jpg" data-item="5"><img
+                                src="img/accessory/covers/covers_5_preview.jpg"></div>
+                    </div>
+                </div>
+                <div class="price">2 200 грн.</div>
+                >
+            </div>
+            <div class="cell"><p class="modal-heading text-bold"><span>Силиконовый</span><br>чехол (Smart Balance 10'')
+            </p>
+
+                <div type="modal-content"><p>Силиконовый чехол-защита для гироскутера обновит цвет и дизайн Вашего
+                    гироскутера, а также защитит Ваш гироскутер от нежелательных сколов и царапин, от попадения пыли и
+                    влаги.<br>Силиконовый чехол-защита на гироскутер не влияет на скорость и маневренность
+                    устройства.<br>- Легко крепится на гироскутер;<br>- Легко снимается;<br>- Защита надёжно
+                    «зафиксирована» на гироскутере.</p></div>
+                <div type="line"></div>
+                <p type="modal-content-1"><span>Нет времени разбираться?</span> Свяжитесь с нами!<br><a  class="phone-item"
+                                                                                                         href="#call"
+                                                                                                         data-modal=""
+                                                                                                         data-modal-close-open="#covers_sm10_accessory">Заказать
+                    звонок</a></p></div>
+        </div>
+        <a class="img-button order-2" href="#order" data-modal="" data-modal-close-open="#covers_sm10_accessory"
+           data-catalog-item-articul="covers_sm10">Заказать</a></div>
+</div>
+<div id=charger_accessory class="modal modal-close hidden accessory-item" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <div class="row">
+            <div class="cell">
+                <div class="item-image-block item-image-container"><span class="left"></span> <img
+                        class="item-image width_75 block-center" src="img/accessory/charger/charger_1.jpg"> <span
+                        class="right"></span></div>
+                <div class="item-thumbs clear-row">
+                    <div class="item-thumbs-container inline-row" data-items=4 data-current-item="0">
+                        <div class="item-thumb active" data-src="img/accessory/charger/charger_1.jpg" data-item="1"><img
+                                src="img/accessory/charger/charger_1_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/charger/charger_2.jpg" data-item="2"><img
+                                src="img/accessory/charger/charger_2_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/charger/charger_3.jpg" data-item="3"><img
+                                src="img/accessory/charger/charger_3_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/charger/charger_4.jpg" data-item="4"><img
+                                src="img/accessory/charger/charger_4_preview.jpg"></div>
+                    </div>
+                </div>
+                <div class="price">1 990 грн.</div>
+                >
+            </div>
+            <div class="cell"><p class="modal-heading text-bold"><span>Зарядка</span><br>оригинальное устройство (220v)
+            </p>
+
+                <div type="modal-content"><p>Универсальное зарядное устройство для гироскутера (2А, 42в) позволит быстро
+                    восполнить заряд батареи от обычной электросети 220 Вольт.<br><span>Внимание!</span><br>Не
+                    подключайте зарядное устройство к влажным разъемам!<br>Зарядное устройство совместимо с:<br>-Smart
+                    Balance: 6,5, SUV 10, Avatar, AMG, Transformers, Diamond, 10 APP;<br>-Wmotion: WM-6, WM-7, WM-8,
+                    WM-9.</p></div>
+                <div type="line"></div>
+                <p type="modal-content-1"><span>Нет времени разбираться?</span> Свяжитесь с нами!<br><a  class="phone-item"
+                                                                                                         href="#call"
+                                                                                                         data-modal=""
+                                                                                                         data-modal-close-open="#charger_accessory">Заказать
+                    звонок</a></p></div>
+        </div>
+        <a class="img-button order-2 js-accessory-modal-opener" href="#order_accessory" data-modal=""
+           data-modal-close-open="#charger_accessory" data-catalog-item-articul="charger">Заказать</a></div>
+</div>
+<div id="stick_accessory" class="modal modal-close hidden accessory-item" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <div class="row">
+            <div class="cell">
+                <div class="item-image-block item-image-container"><img class="item-image width_75 block-center"
+                                                                        src="img/accessory/remote/remote_1.jpg"></div>
+                <div class="price">150 грн.</div>
+                >
+            </div>
+            <div class="cell"><p class="modal-heading text-bold"><span>Пульт ДУ</span><br>bluetooth</p>
+
+                <div type="modal-content"><p>Пульт дистанционного управления нужен для того, чтобы включать и выключать
+                    гироскутер. Более того: во многих случаях включение и выключение гироскутера производится ТОЛЬКО при
+                    помощи пульта.<br>Первая кнопка включает гироскутер, вторая - выключает. При нажатии и удерживании
+                    третьей кнопки гироскутер издает звуковой сигнал (это как звонок на велосипеде, что бы люди
+                    расступались). Четвертая кнопка ничего не делает.</p></div>
+                <div type="line"></div>
+                <p type="modal-content-1"><span>Нет времени разбираться?</span> Свяжитесь с нами!<br><a  class="phone-item"
+                                                                                                         href="#call"
+                                                                                                         data-modal=""
+                                                                                                         data-modal-close-open="#stick_accessory">Заказать
+                    звонок</a></p></div>
+        </div>
+        <a class="img-button order-2 js-accessory-modal-opener" href="#order_accessory" data-modal=""
+           data-modal-close-open="#stick_accessory" data-catalog-item-articul="stick">Заказать</a></div>
+</div>
+<div id="powerbank" class="modal modal-close hidden accessory-item" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <div class="row">
+            <div class="cell">
+                <div class="item-image-block item-image-container"><!--<span class="left"></span>--><img
+                        class="item-image width_75 block-center" src="img/accessory/powerbank/powerbank_1.jpg"><!--<span class="right"></span>-->
+                </div>
+                <div class="price">450 грн.</div>
+                >
+            </div>
+            <div class="cell"><p class="modal-heading text-bold"><span>Powerbank</span><br>Xiaomi</p>
+
+                <div type="modal-content"><p>Производительный и технологичный внешний аккумулятор авторства китайского
+                    производителя. Модель способна осуществлять зарядку не только мелкой электроники, а и ноутбуков,
+                    совместимых с новейшими стандартами электропитания. В арсенале устройства два 2-амперных USB-выхода
+                    напряжением 5,1В, черпающие силы от литий-ионного аккумулятора объёмом 20000 мАч.</p></div>
+                <div type="line"></div>
+                <p type="modal-content-1"><span>Нет времени разбираться?</span> Свяжитесь с нами!<br><a  class="phone-item"
+                                                                                                         href="#call"
+                                                                                                         data-modal=""
+                                                                                                         data-modal-close-open="#powerbank">Заказать
+                    звонок</a></p></div>
+        </div>
+        <a class="img-button order-2 js-accessory-modal-opener" href="#order_accessory" data-modal=""
+           data-modal-close-open="#stick_accessory" data-catalog-item-articul="stick">Заказать</a></div>
+</div>
+<div id=protection class="modal modal-close hidden accessory-item" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <div class="row">
+            <div class="cell">
+                <div class="item-image-block item-image-container"><!--<span class="left"></span>--><img
+                        class="item-image width_75 block-center" src="img/accessory/protection/protection_1.jpg"><!--<span class="right"></span>-->
+                </div>
+                <div class="price">500 грн.</div>
+                >
+            </div>
+            <div class="cell"><p class="modal-heading text-bold"><span>Набор Защиты</span></p>
+
+                <div type="modal-content"><p>Набор защиты включает все самое необходимое для безопасного катания: защиту
+                    коленей, защиту локтей и запястья. Ударостойкий пластик предупредит получение травм при падении, а
+                    пеноматериал смягчит удар. Регулируемая система фиксации обеспечивает комфорт, надежность и свободу
+                    движений.</p></div>
+                <div type="line"></div>
+                <p type="modal-content-1"><span>Нет времени разбираться?</span> Свяжитесь с нами!<br><a  class="phone-item"
+                                                                                                         href="#call"
+                                                                                                         data-modal=""
+                                                                                                         data-modal-close-open="#protection">Заказать
+                    звонок</a></p></div>
+        </div>
+        <a class="img-button order-2 js-accessory-modal-opener" href="#order_accessory" data-modal=""
+           data-modal-close-open="#stick_accessory" data-catalog-item-articul="stick">Заказать</a></div>
+</div>
+<div id="battery_noname_accessory" class="modal modal-close hidden accessory-item" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close"></div>
+        <div class="row">
+            <div class="cell">
+                <div class="item-image-block item-image-container"><span class="left"></span> <img
+                        class="item-image width_75 block-center" src="img/accessory/battery/battery_1.jpg"> <span
+                        class="right"></span></div>
+                <div class="item-thumbs clear-row">
+                    <div class="item-thumbs-container inline-row" data-items=4 data-current-item="0">
+                        <div class="item-thumb active" data-src="img/accessory/battery/battery_1.jp"g data-item="1"><img
+                                src="img/accessory/battery/battery_1_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/battery/battery_2.jpg" data-item="2"><img
+                                src="img/accessory/battery/battery_2_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/battery/battery_3.jpg" data-item="3"><img
+                                src="img/accessory/battery/battery_3_preview.jpg"></div>
+                        <div class="item-thumb" data-src="img/accessory/battery/battery_4.jpg" data-item="4"><img
+                                src="img/accessory/battery/battery_4_preview.jpg"></div>
+                    </div>
+                </div>
+                <div class="price">2 200 грн.</div>
+                >
+            </div>
+            <div class="cell"><p class="modal-heading text-bold"><span>Аккумулятор</span><br>для гироскутера</p>
+
+                <div type="modal-content"><p>Качественная Li-ion аккумуляторная батарея для гироскутера емкостью 4400 мАч
+                    (158 Вт*ч) 36В. Данная батарея для гироскутера позволит проехать 10-15 км, срок службы аккумулятора
+                    около <span>300-400 циклов</span> (заряд-разряд)</p>
+
+                    <p><span>Аккумуляторная батарея применима для:</span><br>-Smart Balance: 6,5, SUV 10, Avatar, AMG,
+                        Transformers, Diamond, 10 APP;<br>-Wmotion: WM-6, WM-7, WM-8, WM-9.</p></div>
+                <div type="line"></div>
+                <p type="modal-content-1"><span>Нет времени разбираться?</span> Свяжитесь с нами!<br><a class="phone-item"
+                                                                                                        href="#call"
+                                                                                                        data-modal=""
+                                                                                                        data-modal-close-open="#battery_noname_accessory">Заказать
+                    звонок</a></p></div>
+        </div>
+        <a class="img-button order-2" href="#order" data-modal="" data-modal-close-open="#battery_noname_accessory"
+           data-catalog-item-articul="battery_noname">Заказать</a></div>
+</div>
+<!--всплывающая картинка-->
+<div class="lightbox text-center hidden">
+    <div class="container"><span class="left" data-dir="left" data-image-item=""></span> <span class="right" data-dir="right"
+                                                                                               data-image-item=""></span>
+    </div>
+</div>
+<!--Видео сравнения всплывающее окно-->
+<div id="catalog_video" class="modal modal-close modal-video hidden" data-modal-active="">
+    <div class="modal-container text-center">
+        <div class="modal-close">x</div>
+    </div>
+</div>
+<!--
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCX9V1on8GQb1UNuPGnpIqkMVH0CDrUQG8&callback=initMap&language=ru-RU"
+        type="text/javascript">
+
+</script>
+<![endif]&ndash;&gt;
+<script type="text/javascript">
+</script>
+-->
+
+<!-- Optimized loading JS Start -->
+<script>var scr = {
+    "scripts": [
+        {"src": "js/libs.min.js", "async": false},
+        {"src": "js/common.js", "async": false}
+    ]
+};
+!function (t, n, r) {
+    "use strict";
+    var c = function (t) {
+        if ("[object Array]" !== Object.prototype.toString.call(t))return !1;
+        for (var r = 0; r < t.length; r++) {
+            var c = n.createElement("script"), e = t[r];
+            c.src = e.src, c.async = e.async, n.body.appendChild(c)
+        }
+        return !0
+    };
+    t.addEventListener ? t.addEventListener("load", function () {
+        c(r.scripts);
+    }, !1) : t.attachEvent ? t.attachEvent("onload", function () {
+        c(r.scripts)
+    }) : t.onload = function () {
+        c(r.scripts)
+    }
+}(window, document, scr);
+</script>
+<!-- Optimized loading JS End -->
+
+</body>
+</html>
