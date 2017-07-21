@@ -1,0 +1,335 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: 1.6
+  font-family: $default-font
+  overflow-x: hidden
+
+.wrap, body, form
+  position: relative
+
+#accessories .product-item a.preview:before, #catalog .podl .cell:first-of-type:before, #configurator .row .cell .kol:before
+  content: ''
+
+#construction .os-block .point
+  &:after, &:before
+    content: ''
+
+#contacts .point:before, #faq .quest-block .header:after, #menu ul li a:before
+  content: ''
+
+#peoples .people
+  .info:before, &:after, &:before
+    content: ''
+
+#proiz .row .cell .slider:before
+  content: ''
+
+.b-par .burger
+  span, &:after, &:before
+    content: ''
+
+.bg-inp:before
+  content: ''
+
+.black-bg
+  &:after, &:before
+    content: ''
+
+.blue-bg
+  &:after, &:before
+    content: ''
+
+.img-button:after, .modal .modal-form form .input-block:before
+  content: ''
+
+header
+  .bottom-header #down:after, &:after
+    content: ''
+
+.template, body
+  background: url("img/body-min.png")
+
+#catalog .row, #configurator .row, #proiz .row, .row
+  table-layout: fixed
+
+#contacts .title
+  pointer-events: none
+
+
+@keyframes arrow
+  100%
+    opacity: 0
+    transform: scale(2)
+
+
+
+*
+  padding: 0
+  margin: 0
+  outline: 0
+
+body, html
+  width: 100%
+  height: 100%
+  font-size: 16px
+
+body
+  font-family: "PTSansRegular", sans-serif
+
+.title, header .bottom-header h1
+  font-family: "Avanti Bold", serif
+
+img
+  max-width: 100%
+  vertical-align: top
+
+.wrap
+  max-width: 1170px
+  margin: auto
+  z-index: 15
+
+.container
+  max-width: 1170px
+  padding: 15px
+  margin: 0 auto
+
+ul
+  margin: 0
+  li
+    list-style-type: none
+    display: inline-block
+
+a
+  text-decoration: none
+  outline: none
+  color: inherit
+
+.img-button, .template
+  position: relative
+  max-width: 100%
+
+.t-left
+  text-align: left
+
+.t-center
+  text-align: center
+
+.t-right
+  text-align: right
+
+.right
+  float: right
+
+.inline-row
+  font-size: 0
+  display: flex
+  width: 100%
+  flex-wrap: wrap
+  justify-content: space-around
+
+.img-button
+  font-size: 18px
+  line-height: 22px
+  color: #000
+  text-align: center
+  padding: 34px 0
+  text-decoration: none
+  &.header
+    font-size: 18px
+    line-height: 22px
+    color: #000
+    text-align: center
+    padding: 34px 0
+    text-decoration: none
+
+.template
+  width: 100%
+  overflow: hidden
+
+#mp-block, .cat-nav .slick-list
+  overflow: visible
+
+.img-button
+  background-size: 100% 100% !important
+  &:after
+    background-size: 100% 100% !important
+
+.noselect
+  user-select: none
+
+
+.img-button
+  box-sizing: border-box
+  border: none
+  display: inline-block
+  cursor: pointer
+  &:hover:after
+    opacity: 0
+    animation: btn 1s cubic-bezier(0.19, 1, 0.22, 1) 1
+  &:after
+    width: 100%
+    position: absolute
+    height: 100%
+    display: block
+    opacity: 0
+    left: 0
+    top: 0
+  &.header
+    width: 287px
+    height: 110px
+    background: url(img/buttons/1-min.png)
+  &.blue-block, &.manager, &.order-2
+    text-transform: uppercase
+    padding: 0
+  &.header
+    span
+      font-size: 22px
+      font-weight: 700
+      text-transform: uppercase
+    &:hover
+      background: url(img/buttons/1-min-hover.png)
+    &:active
+      background: url(img/buttons/1-min-active.png)
+    &:after
+      background: url(img/buttons/1-min.png)
+  &.kons
+    background: url(img/buttons/8-min.png)
+    &:after
+      background: url(img/buttons/8-min.png)
+    width: 324px
+    height: 97px
+  &.order-2
+    width: 160px
+    height: 60px
+    background: url(img/buttons/5-min.png)
+    font-size: 20px
+    line-height: 58px
+    &:hover
+      background: url(img/buttons/5-min-hover.png)
+    &:active
+      background: url(img/buttons/5-min-active.png)
+  &.blue-block, &.order-2:after
+    background: url(img/buttons/5-min.png)
+  &.blue-block
+    width: 234px
+    height: 73px
+    vertical-align: middle
+    margin-left: 27px
+    font-weight: 700
+    font-size: 22px
+    line-height: 64px
+    &:active, &:hover
+      background: url(img/buttons/5-min-hover.png)
+    &:after
+      background: url(img/buttons/5-min.png)
+  &.manager
+    vertical-align: middle
+    display: inline-block
+    margin: 0 auto
+    padding: 35px 20px
+    background: url(img/buttons/7-min.png)
+    font-weight: 700
+    font-size: 28px
+    line-height: 32px
+  &.call-button, &.get
+    height: 73px
+    vertical-align: middle
+    font-weight: 700
+    padding: 0
+    font-size: 22px
+    text-transform: uppercase
+  &.manager
+    &:hover
+      background: url(img/buttons/7-min-hover.png)
+    &:active
+      background: url(img/buttons/7-min-active.png)
+    &:after
+      background: url(img/buttons/7-min.png)
+  &.get
+    width: 234px
+    margin-left: 27px
+    background: url(img/buttons/6-min.png)
+    line-height: 64px
+    &:hover
+      background: url(img/buttons/6-min-hover.png)
+    &:active
+      background: url(img/buttons/6-min-active.png)
+    &:after
+      background: url(img/buttons/6-min.png)
+  &.order-button
+    background: url(img/buttons/3-min.png)
+    &:after
+      background: url(img/buttons/3-min.png)
+    width: 234px
+    height: 73px
+    vertical-align: middle
+  &.call-button
+    width: 323px
+    background: url(img/buttons/5-min.png)
+    background-size: 100% 100%
+    line-height: 70px
+    &:hover
+      background: url(img/buttons/5-min-hover.png)
+    &:active
+      background: url(img/buttons/5-min-active.png)
+    &:after
+      background: url(img/buttons/4-min.png)
+
+.title
+  font-weight: 100
+  font-size: 5.8rem
+  color: #fff
+  line-height: 1.2em
+  padding-top: 58px
+  padding-bottom: 40px
+  .big
+    display: block
+    font-size: 7.2rem
+    text-transform: uppercase
+
+.row
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  justify-content: space-around
+  .cell
+    flex: 0 1 450px
+    padding: 10px
+    box-sizing: border-box
+    vertical-align: top
+
+.owl-dot
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  display: inline-block
+  background-color: #ffffff
