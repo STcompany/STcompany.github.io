@@ -1,0 +1,2 @@
+документация по карусельке:
+http://www.bkosborne.com/jquery-waterwheel-carousel

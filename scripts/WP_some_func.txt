@@ -1,0 +1,61 @@
+
+// echo site logo
+<?php the_custom_logo( $blog_id ); ?>
+
+//check current lang
+<?php
+	if(function_exists('pll_current_language')){
+		$curr_lang = pll_current_language();
+	}else{
+		$curr_lang = 'ru';
+	}
+?>
+
+//echo langs
+<?php
+	if(function_exists('pll_the_languages')){
+		pll_the_languages();
+	}
+?>
+
+// echo post content
+<?php
+	$post_header_phones = get_post( 8 ); // post header_phones
+	$phone_for_mobile_menu = apply_filters('the_content', $post_header_phones->post_content);
+	echo $phone_for_mobile_menu;
+?>
+
+// echo menu
+<?php
+	if($curr_lang == 'ru'){
+		$curr_menu = 'main_menu';
+	}else{
+		$curr_menu = 'main_menu_ukr';
+	}
+	wp_nav_menu(array(
+		'menu' => $curr_menu,
+		'container' => false,
+		'menu_class' => ''
+	));
+?>
+
+//echo post thumbnail
+<?php
+	if(get_the_post_thumbnail_url( 19 )){
+		echo get_the_post_thumbnail_url( 19, 'full' );
+	}else{
+		echo '/wp-content/themes/realpack/img/bgc_header.jpg';
+	}
+?>);
+
+// echo post meta
+<?php echo get_post_meta( 19, 'button_get_callback_text', true ); ?>
+
+//echo contact-form
+<?php
+	if($curr_lang == 'ru'){
+		echo do_shortcode('[cf7-form cf7key="forma-zakaza-obratnogo-zvonka"]');
+	}else{
+		echo do_shortcode('[cf7-form cf7key="forma-zakaza-obratnogo-zvonka-ukr"]');
+	}
+?>

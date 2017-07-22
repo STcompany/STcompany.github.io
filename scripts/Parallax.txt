@@ -1,0 +1,100 @@
+
+//============================================== для внутреннего контента =================
+//jQuery
+$(window).scroll(function(){
+	
+	var st = $(this).scrollTop();
+	$(".header-text").css({
+		"transform" : "translate(0%, " +st+ "%)"
+	});
+	
+});
+
+//html
+<section>
+	<div class="header-text">
+		Some Text
+	</div>
+</section>
+
+//css
+section{
+	height: 100vh;
+	background-image: url("../path/to/bg_img.jpg");
+	background-size: cover;
+	background-color: #666;
+	position: relative;
+}
+.header-text{
+	color: #fff
+	font-size: 40px;
+	display: inline-block;
+	with: 200px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -20px;
+}
+
+//============================================== для картинки внутри секции =================
+//html
+<section class="sect_2">
+	<img src="path/to/img.jpg" alt="alt">
+</section>
+
+
+
+//css
+.sect_2{
+	background-color: #666;
+	position: relative;
+	overflow: hidden;
+}
+.sect_2 img{
+	position: absolute;
+	with: 100%;
+	top: -300px;
+}
+
+//js
+$(window).scroll(function(){
+	
+	var st = $(this).scrollTop();
+	$(".sect_2 img").css({
+		"transform" : "translate(0%, " +st/20+ "%)"
+	});
+	
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
