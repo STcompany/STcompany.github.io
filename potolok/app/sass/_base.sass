@@ -1,0 +1,102 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+body
+  flex: auto
+  font-size: 16px
+  line-height: 1.3
+  min-width: 320px
+  position: relative
+  font-family: $default-font
+  overflow-x: hidden
+  color: $default-color
+  display: flex !important
+  flex-direction: column
+  justify-content: flex-start
+  margin: 0
+  background-color: #fff
+
+textarea
+  resize: none
+
+img
+  display: block
+  width: 100%
+  height: auto
+
+main
+  flex-grow: 1
+  overflow-x: hidden
+
+*
+  margin: 0
+  padding: 0
+
+.container
+  max-width: 980px
+  padding: 0 15px
+  margin: 0 auto
+  position: relative
+
+.wrapper
+  display: flex
+
+i
+  width: 18px
+  text-align: center
+  color: #d5c8ac
+  transition: all .7s ease
+
+
+a
+  text-decoration: none
+  outline: none
+  color: $default-color
+  transition: all .7s ease
+  white-space: nowrap
+  &:hover,&:focus,&:active
+    outline: none
+    text-decoration: none
+    color: $accent-color
+    i
+      color: $accent-color
+
+
+li
+  list-style-type: none
+
+h2
+  font: 600 30px $accent-font
+  color: $accent-color
+  text-align: center
+
+.active
+  display: block
