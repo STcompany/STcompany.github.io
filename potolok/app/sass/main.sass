@@ -3,5 +3,92 @@
 @import "libs"
 
 //Custom styles here
+//section_1
+.sect_1
+  .wrapper
+    justify-content: space-between
+    align-items: flex-start
+.s1_item
+  text-align: center
+  margin-top: -64px
+  max-width: 300px
+  width: 100%
+  padding: 0 5px
+
+.s1_row_1, .s1_row_2
+  display: inherit
+
+.s1_text
+  h3
+    font: 600 16px/19px $default-bold
+    margin-bottom: 10px
+  p
+    font: italic 14px/16px $default-font
+    color: #7F7F7F
+
+.s1_img
+  width: 128px
+  height: 128px
+  display: inline-block
+  background-position: bottom
+  background-size: cover
+  &:hover
+    background-position: top
+
+//section_2
+.s2_text
+  max-width: 940px
+  width: 100%
+  text-align: center
+  h2
+    font: 300 22px/29px $default-font
+  span
+    font: 900 22px/29px $default-bold
+  p
+    font: 300 24px/31px $myriad
+    margin-bottom: 20px
+.sect_2
+  .wrapper
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    div
+      margin-top: 20px
+    div+div
+      margin-left: 10px
+.s2_call
+  border-top: 2px solid $accent-color
+  border-bottom: 2px solid $accent-color
+  padding: 15px 40px
+  text-align: center
+  h2
+    font: 700 31px/39px $accent-font
+    text-transform: uppercase
+  h3
+    font: 300 31px/39px $accent-font
+    color: $accent-color
+.s2_phones
+  font: 22px/26px $default-font
+  span
+    color: $accent-color
+.s2_gifts
+  font: 14px/17px $default-font
+  max-width: 350px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  li
+    display: flex
+    align-items: center
+    img
+      max-width: 35px
+      max-height: 35px
+      display: inline-block
+    p
+      display: inline-block
+      max-width: 260px
+      margin: auto 0 auto 20px
+  li+li
+    margin-top: 15px
 
 @import "media"

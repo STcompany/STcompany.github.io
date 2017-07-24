@@ -59,6 +59,7 @@ header
   padding: 170px 0 90px
   color: #fff
   text-align: center
+  box-shadow: 0 0 2px 1px $accent-color
   .h2, .h3
     border-top: 1px solid $accent-color
     border-bottom: 1px solid $accent-color
@@ -77,36 +78,32 @@ header
     width: 100%
     h3
       font: 300 31px/37px $accent-font
-  .first_item
-    text-align: left
-    display: table
-    margin-left: 60px
-    .fi_img
-      width: 82px
-      height: 82px
+  .head_item
+    display: flex
+    align-items: center
+    .head_img
+      width: 70px
+      height: 70px
       display: inline-block
       margin-right: 20px
-      background-position: center
+      background-position: 0 100%
       background-repeat: no-repeat
+      background-size: cover
+      &:hover
+        background-position: 0 0
     p
-      display: table-cell
-      font: 700 38px/46px $accent-font
-      vertical-align: middle
-  .second_item
-    text-align: right
-    display: table
-    margin: 20px 120px 20px auto
-    .si_img
-      width: 82px
-      height: 82px
       display: inline-block
-      margin-right: 20px
-      background-position: center
-      background-repeat: no-repeat
-    p
-      display: table-cell
       font: 700 38px/46px $accent-font
-      vertical-align: middle
+    &.content_left
+      justify-content: flex-start
+    &.content_right
+      justify-content: flex-end
+  .head_item+.head_item
+    margin: 20px 0
+
+.head_wrap
+  max-width: 870px
+  margin: 0 auto
 
 //mobile-buttons
 .mobile-buttons
@@ -238,6 +235,15 @@ form
         font-size: 30px
         line-height: 34px
 
+@media only screen and (max-width: 600px)
+  header .head_item
+    p
+      font-size: 30px
+      line-height: 32px
+    .head_img
+      width: 62px
+      height: 62px
+
 @media only screen and (max-width: 538px)
   .topline .wrapper
     .phones, .consultation
@@ -257,9 +263,9 @@ form
   .mobile-buttons
     margin-left: 20px
   .mobile_mfp
-    margin-bottom: 2px
+    margin-bottom: 5px
   .mobile_mfp, .mobile_call
-    padding: 2px
+    padding: 6px
     font-size: 14px
   header .second_item
     text-align: left
@@ -275,3 +281,9 @@ form
       margin-bottom: 20px
   .mfp-content form .mfp-close
     transform: translate(-100%,-110%)
+  header .head_item
+    p
+      font-size: 19px
+      line-height: 22px
+    .head_img
+      margin-right: 5px

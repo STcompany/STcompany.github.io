@@ -15,21 +15,9 @@ $(document).ready(function() {
             $(".text p").eq(+counter).fadeIn('slow');
             counter++;
         }, 2000);
-
-        //mouse on img
-        $(".fi_img").mouseover(function () {
-            $(this).css('background-image', 'url(img/u164-r.png');
-        });
-        $(".fi_img").mouseout(function () {
-            $(this).css('background-image', 'url(img/u164.png');
-        });
-        $(".si_img").mouseover(function () {
-            $(this).css('background-image', 'url(img/u170-r.png');
-        });
-        $(".si_img").mouseout(function () {
-            $(this).css('background-image', 'url(img/u170.png');
-        });
     }
+
+
 
     //masked
     $("#form_phone").mask("+380(999)-999-99-99");
