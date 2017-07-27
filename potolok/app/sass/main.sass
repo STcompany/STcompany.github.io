@@ -48,6 +48,7 @@
     font: 300 24px/31px $myriad
     margin-bottom: 20px
 .sect_2
+  margin-bottom: 20px
   .wrapper
     justify-content: space-around
     align-items: center
@@ -232,7 +233,7 @@
     right: 50%
     transform: translateX(-50%)
   .slick-next
-    left: 50%
+    left: 55%
     transform: translateX(50%)
 
 //section-5
@@ -247,16 +248,20 @@
 .s5_wrapper
   background-color: #E3E3E3
 
+.s5c_item+.s5c_item
+  margin-top: 20px
+
 .s5c_item
   display: flex
   flex-wrap: wrap
   justify-content: space-between
   text-align: center
-  margin: 0 0 20px 10px
+  margin-left: 10px
   h2
     width: 100%
     color: #000
     font: 700 24px/29px $accent-font
+    margin-bottom: 10px
   ul
     max-width: 220px
     text-align: left
@@ -280,6 +285,8 @@
   max-width: 490px
   width: 100%
   min-width: 290px
+  img
+    height: 100%
 
 .s5card_img
   position: relative
@@ -296,6 +303,7 @@
     .s5ci_text_block
       opacity: 1
       visibility: visible
+      z-index: 14
   .s5ci_text_block
     border-radius: 15px
     transition: all .6s ease
@@ -325,11 +333,13 @@
     justify-content: center
   p
     font: 14px/17px $default-font
+    margin-bottom: 40px
     span
       color: $accent-color
 .s6_head
   color: #000000
   font: 400 28px/32px $accent-font
+  margin-bottom: 20px
   span
     color: $accent-color
 .s6_img1
@@ -489,11 +499,13 @@
     color: #000000
   .red
     color: $accent-color
+    margin-top: 30px
 .s10_card_wrap
   margin: 20px 0
   >:nth-child(1),>:nth-child(2)
     .s10card_img .s10ci_text_block
       left: 50%
+      z-index: 14
 .s10card_img
   position: relative
   width: 169px
@@ -554,6 +566,9 @@
       font-size: 14px
       color: #90827a
 
+.s10_list
+  padding-top: 60px
+
 
 .s10_img_wrap
   max-width: 70px
@@ -563,16 +578,24 @@
   max-width: 482px
   width: 100%
   height: 100%
-  iframe
+  .s10v_iframe
     max-width: 100%
     width: 100%
     height: 290px
+    margin-top: 20px
+    iframe
+      width: 100%
+      height: 290px
+
 .s10_advantages
   display: inline-block
   max-width: 320px
+
+.s10_item+.s10_item
+  margin-top: 50px
+
 .s10_item
   position: relative
-  margin-bottom: 75px
   max-width: 430px
   font-size: 18px
   text-align: center
@@ -601,10 +624,13 @@
 .s11_background
   max-width: 174px
   width: 100%
-  background-size: contain
   height: 191px
-  margin: 0 auto
-  margin-bottom: 10px
+  margin: 0 auto 10px
+  background-repeat: no-repeat
+  background-position: bottom
+  background-size: cover
+  &:hover
+    background-position: top
 .s11_item
   max-width: 390px
   text-align: center
@@ -613,6 +639,10 @@
   line-height: 22px
   margin-bottom: 25px
   width: 100%
+
+.s11_text
+  padding: 0 15px
+
 //section 12
 .sect_12
   margin-bottom: 100px
@@ -659,6 +689,18 @@
     font: 600 22px/26px KelsonSansLight,sans-serif
 .sect_13_background
   background-size: cover
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 7.5%
+    left: 0
+    right: 0
+    width: 100%
+    height: 85%
+    background-color: #D3CED5
+    opacity: .6
+    box-shadow: inset 0px 0px 8px rgba(0,0,0,0.5), inset 0px 0px 8px rgba(0,0,0,0.5)
 .s13_form_name
   font-size: 14px
   line-height: 14px
@@ -702,7 +744,8 @@
   display: flex
   flex-direction: column
   justify-content: space-around
-  margin-top: 30px
+  margin: 50px 0
+
 //section 14
 .sect_14
   margin-bottom: 100px
@@ -748,19 +791,24 @@
   text-decoration: underline
   font: 22px/24px $default-font
   margin-bottom: 10px
+  transition: all .5s ease
   &:hover
     cursor: pointer
-    margin-top: -1px
+    color: $accent-color
 
 .s15_content
   font: 18px/25px serif
   border-radius: 10px
-  padding: 0
-  color: #999
+  overflow: auto
   display: none
+  border: 1px #7F7F7F solid
+  padding: 12px 10px
+  color: #999
 
-.s15_item.active .s15_head
-  color: $accent-color
+.s15_item.active
+  .s15_head
+    color: $accent-color
+
 
 
 //section 16
@@ -849,6 +897,7 @@
 //section-17
 .sect_17
   border-top: 2px #B59191 solid
+  border-bottom: 2px #B59191 solid
   .container
     position: initial
 .sect_17_map
@@ -876,6 +925,10 @@
     z-index: 0
     max-width: 100%
     width: 100%
+    height: 320px
+    iframe
+      width: 100%
+      height: 100%
   .item
     display: flex
     margin: 5px 10px
@@ -889,6 +942,19 @@
       margin-right: 5px
     span
       color: $accent-color
+
+//footer
+footer
+  text-align: center
+  height: 75px
+  align-content: center
+  display: flex
+  color: #7f7f7f
+  font-family: $accent-font
+  font-size: 18px
+  a
+    display: block
+    margin: auto
 
 
 //btn_to-top

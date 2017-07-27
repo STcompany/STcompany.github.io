@@ -29,10 +29,9 @@
     display: none
   .sect_10
     h2
-      font: 600 20px/23px KelsonSansLight,sans-serif
+      font: 600 26px/28px KelsonSansLight,sans-serif
       margin-bottom: 10px
   .s10_item
-    margin-bottom: 10px
     .s10_img_wrap
       display: none
   .s10_video iframe
@@ -51,6 +50,8 @@
       line-height: 18px
     .s8_other
       max-width: 150px
+  .s10_item+.s10_item
+    margin-top: 20px
 
 @media only screen and (max-width: 949px)
   .sect_7
@@ -63,6 +64,16 @@
   .nav_carousel
     .slick-next, .slick-prev
       bottom: 100%
+
+@media only screen and (max-width: 831px)
+  .s10_list
+    padding-top: 0
+
+@media only screen and (max-width: 800px)
+  .sect_13_background::before
+    top: 0
+    height: 100%
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .sect_1 .wrapper
