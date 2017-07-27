@@ -10,8 +10,59 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
-  /**/
+  .s5_wrapper
+    .wrapper
+      flex-wrap: wrap
+      justify-content: center
+  .s5c_item
+    justify-content: space-around
+    >:nth-child(2),>:nth-child(3)
+      .s5card_img .s5ci_text_block
+        left: 50%
+  .sect_17_map
+    .window
+      position: initial
+      margin: 20px
+      width: auto
+      transform: none
+  .s13_item .s13_img_wrap
+    display: none
+  .sect_10
+    h2
+      font: 600 20px/23px KelsonSansLight,sans-serif
+      margin-bottom: 10px
+  .s10_item
+    margin-bottom: 10px
+    .s10_img_wrap
+      display: none
+  .s10_video iframe
+    max-height: 250px
+  .s10_card_wrap
+    position: relative
+    margin-left: 0
+    .s10card_img
+      position: static
+      .s10ci_text_block
+        left: 50%
+        transform: translateX(-50%)
+  .sect_8 ul li
+    .s8_first
+      font-size: 16px
+      line-height: 18px
+    .s8_other
+      max-width: 150px
 
+@media only screen and (max-width: 949px)
+  .sect_7
+    .wrapper
+      justify-content: center
+
+@media only screen and (max-width: 885px)
+  .s4_content_img
+    margin-bottom: 50px
+  .nav_carousel
+    .slick-next, .slick-prev
+      bottom: 100%
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .sect_1 .wrapper
@@ -21,20 +72,109 @@
     margin-top: 0
   .s1_item+.s1_item
     margin-left: 0
+  .s3_form .form_img
+    display: none
+  .sect_3 .container
+    text-align: center
+  .s3_form
+    display: inline-block
+    width: auto
+    form
+      margin-top: 10px
+  .s4_content_img
+    margin-left: 0
+    padding: 0 30px
+  .sect_16 h2
+    font-size: 20px
+  .s14_about
+    flex-wrap: wrap
+  .s14_img_block
+    flex-direction: row
+    flex-wrap: wrap
+    max-width: none
+    justify-content: space-around
+    .s14_img_wrap
+      margin-bottom: 10px
+  .s14_text_block p
+    font-size: 14px
+    line-height: 16px
+  .s14_logo_wrap
+    display: none
+  .sect_11 .wrapper
+    flex-wrap: wrap
+
+@media only screen and (max-width: 675px)
+  .sect_8
+    display: none
 
 @media only screen and (max-width: 600px)
-  /**/
+  .s10card_img .s10ci_text_block
+    width: 360px
 
-@media only screen and (max-width: 538px)
-  /**/
+@media only screen and (max-width: 589px)
+  .sect_16 form .block .s16_form_item
+    margin: 0 0 10px
+    textarea
+      height: 50px
+    input
+      height: 25px
 
+@media only screen and (max-width: 500px)
+  .s5c_item
+    position: relative
+    margin-left: 0
+    .s5card_img
+      position: static
+      .s5ci_text_block
+        left: 50%
+        transform: translateX(-50%)
+        width: 290px
+  .sect_9
+    h2
+      font-size: 30px
+    p
+      font-size: 14px
+    .s9_red_p
+      font-size: 16px
+      margin: 10px 0
+    .s9_red_p_last
+      padding-bottom: 15px
+  .sect_10 .container>h2
+    margin-top: 15px
+    font: 100 30px/35px $accent-font
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
   .s2_phones, .s2_text p
     font-size: 18px
     line-height: 20px
+  .s4_content_img
+    padding: 0 20px
+    img
+      height: 324px
+  .sect_6 p
+    display: none
+  .s15_head
+    font: 18px/20px ArialRegular,sans-serif
+  .s15_content
+    font: 16px/18px serif
+  .sect_13 h2
+    font: 300 18px/21px arial,sans-serif
+  .s12_popup_wrap
+    max-width: 250px
+    .mfp-close
+      left: initial
+  .sect_12 .s12_img_wrap
+    display: block
+    margin: 5px auto
+    max-width: 150px
 
-
+@media only screen and (max-width: 370px)
+  .s10_card_wrap
+    position: static
+    .s10card_img
+      position: relative
+      .s10ci_text_block
+        width: 320px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)

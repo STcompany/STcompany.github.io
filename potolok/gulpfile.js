@@ -54,7 +54,8 @@ gulp.task('libs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/Magnific-Popup-master/dist/jquery.magnific-popup.min.js',
-		'app/libs/maskedinput/jquery.maskedinput.min.js'
+		'app/libs/maskedinput/jquery.maskedinput.min.js',
+		'app/libs/slick/slick.min.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())

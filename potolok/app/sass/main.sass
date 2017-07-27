@@ -91,4 +91,816 @@
   li+li
     margin-top: 15px
 
+//section3
+.sect_3
+  padding: 10px 0
+  background-position: center
+  background-size: cover
+
+.s3_form
+  background-color: #fff
+  display: flex
+  justify-content: space-around
+  align-items: center
+  max-width: 768px
+  width: 100%
+  margin: 0 auto
+  box-shadow: 5px 2px 4px rgba(255,255,255,0.33)
+  .form_img
+    max-width: 234px
+    height: auto
+    display: inline-block
+  form
+    display: inline-block
+    margin: 0
+    border: none
+    max-width: 400px
+    width: 100%
+    padding: 0
+    margin-bottom: 45px
+    h2
+      color: #000
+      text-transform: none
+      font: 700 20px/24px $accent-font
+    p
+      font: 15px/18px $default-font
+      color: #7F7F7F
+      text-align: center
+      margin-bottom: 30px
+
+.s3_form_item
+  position: relative
+  width: 70%
+  margin: 0 auto
+  text-align: center
+  i
+    position: absolute
+    top: 50%
+    left: 5px
+    font-size: 18px
+    transform: translateY(-50%)
+  input
+    font-style: normal
+    text-align: left
+    padding: 10px 0 10px 30px
+    border-radius: 3px
+  input+input
+    margin-bottom: 20px
+  button
+    background-color: $accent-color
+    text-transform: uppercase
+    color: #fff
+    border: 1px solid #000
+    outline: none
+    border-radius: 5px
+    width: 100%
+    padding: 5px 0
+    font-size: 20px
+    box-shadow: 7px 6px 10px rgba(0,0,0,0.7)
+    transition: all .7s ease
+    i
+      font-size: 30px
+      width: 30px
+      top: 47%
+      line-height: 30px
+      color: #fff
+    &:hover
+      box-shadow: 0 0 10px $accent-color
+      cursor: pointer
+
+//section-4
+.sect_4
+  .wrapper
+    position: relative
+    flex-direction: row
+    justify-content: center
+    flex-wrap: wrap-reverse
+  h2
+    font: 400 30px/36px $accent-font
+    color: #000
+    margin-bottom: 20px
+    text-transform: uppercase
+    span
+      color: $accent-color
+
+.s4_content_img
+  display: flex
+  align-items: center
+  max-width: 554px
+  width: 100%
+  background-repeat: no-repeat
+  background-size: cover
+  margin-left: 20px
+
+.s4_min_img
+  max-width: 282px
+  width: 100%
+  text-align: center
+  position: relative
+  .slick-track
+    transform: none !important
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+  ul
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    align-items: center
+    li
+      background-size: contain
+      width: 60px !important
+      height: 47px
+      margin: 5px
+      &:hover
+        cursor: pointer
+
+.nav_carousel
+  button.slick-prev, button.slick-next
+    opacity: 0
+    width: 40px
+    height: 40px
+    z-index: 2
+    cursor: pointer
+  i
+    color: #000000
+    margin: 10px
+  .slick-prev, .slick-next
+    position: absolute
+    bottom: -30px
+  .slick-prev
+    right: 50%
+    transform: translateX(-50%)
+  .slick-next
+    left: 50%
+    transform: translateX(50%)
+
+//section-5
+.s5_head
+  text-transform: uppercase
+  color: #000
+  font: 400 30px/36px $accent-font
+  margin-bottom: 10px
+  span
+    color: $accent-color
+
+.s5_wrapper
+  background-color: #E3E3E3
+
+.s5c_item
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  text-align: center
+  margin: 0 0 20px 10px
+  h2
+    width: 100%
+    color: #000
+    font: 700 24px/29px $accent-font
+  ul
+    max-width: 220px
+    text-align: left
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    li
+      display: flex
+      .s5ci_li_img
+        max-width: 100px
+        max-height: 100px
+        img
+          display: inline-block
+          margin-right: 10px
+      p
+        margin-left: 7px
+    li+li
+      margin-top: 15px
+
+.s5_img
+  max-width: 490px
+  width: 100%
+  min-width: 290px
+
+.s5card_img
+  position: relative
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  display: inline-block
+  background-size: 100%
+  background-position: center
+  transition: all .3s ease
+  &:hover
+    cursor: pointer
+    box-shadow: 0 0 12px 2px rgba(255, 0, 244, 0.6)
+    .s5ci_text_block
+      opacity: 1
+      visibility: visible
+  .s5ci_text_block
+    border-radius: 15px
+    transition: all .6s ease
+    bottom: 100%
+    right: 50%
+    opacity: 0
+    visibility: hidden
+    padding: 15px 10px 20px
+    background-color: #ffffff
+    text-align: center
+    position: absolute
+    border: 1px solid $accent-color
+    width: 300px
+    box-shadow: 0 0 5px 2px rgba(0, 186, 64, .4)
+    img
+      margin: 0 auto
+      width: 169px
+      height: 110px
+    p
+      font-size: 14px
+      color: #a5978f
+
+//section_6
+.sect_6
+  .wrapper
+    flex-wrap: wrap
+    justify-content: center
+  p
+    font: 14px/17px $default-font
+    span
+      color: $accent-color
+.s6_head
+  color: #000000
+  font: 400 28px/32px $accent-font
+  span
+    color: $accent-color
+.s6_img1
+  max-width: 550px
+.s6_img2
+  max-width: 400px
+
+//section 7
+.sect_7
+  .wrapper
+    flex-wrap: wrap
+    justify-content: space-between
+  .s7_w2
+    margin-top: 30px
+
+.s7_head
+  color: #000000
+  font: 400 32px/36px $accent-font
+  text-transform: uppercase
+  margin-bottom: 10px
+
+.s7_item
+  max-width: 230px
+  width: 100%
+  text-align: center
+  p
+    margin: 5px 0
+    sup
+      line-height: 0
+      font-size: 11px
+  span
+    color: $accent-color
+    font-weight: 600
+    font-size: 23px
+    line-height: 28px
+    font-family: $ultra-font
+.s7i_img
+  max-width: 188px
+  margin: 0 auto
+  img
+    transition: all .3s ease
+    width: 100%
+    border: 2px solid $accent-color
+    border-radius: 5px
+    &:hover
+      box-shadow: 0 0 8px 2px rgba(255,99,124,0.5)
+
+.s7_p_bottom
+  position: relative
+  font-size: 15px
+  color: #7f7f7f
+  max-width: 600px
+  width: 100%
+  border-top: 1px solid #2c2c2c
+  line-height: 23px
+  margin: 15px 0 45px 0
+  font-family: $default-font
+  sup
+    line-height: 0
+    font-size: 10px
+  span
+    font-weight: 600
+  .s7_p_span
+    color: $accent-color
+
+//section-8
+.s8_head
+  text-transform: uppercase
+  color: #000
+  font: 300 36px/43px $accent-font
+  margin-bottom: 30px
+.sect_8
+  ul
+    li
+      display: flex
+      text-align: center
+      align-items: center
+      .s8_first
+        max-width: 400px
+        width: 100%
+        display: flex
+        justify-content: center
+        color: #7f7f7f
+        font-size: 20px
+        line-height: 24px
+        align-items: center
+      .s8_other
+        max-width: 210px
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        .s8_border
+          position: absolute
+          left: 0
+          transform: translateX(-50%)
+          top: 0
+          height: 100%
+          width: initial
+      div
+        height: 50px
+        img
+          height: 35px
+          width: 35px
+          margin: auto
+    li:nth-child(2n+1)
+      background-color: lighten($accent-color, 40%)
+    li:nth-child(1)
+      background-color: $accent-color
+      color: #fff
+
+//section9
+.sect_9
+  position: relative
+  z-index: 1
+  background-position: center
+  background-size: cover
+  margin-top: 40px
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 95%
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    background-color: rgba(255, 255, 255, .7)
+    z-index: -1
+    box-shadow: 4px 4px 5px rgba(255,0,0,0.5)
+  .container
+    padding: 30px 15px
+    >:last-child
+      padding-bottom: 30px
+  h2
+    margin-top: 10px
+    color: $default-color
+    text-decoration: underline
+    font-weight: 100
+    font-size: 36px
+  p
+    font: 600 18px/22px $default-font
+.s9_red_p
+  color: $accent-color
+  margin: 16px 0
+
+//section10
+.sect_10
+  margin-bottom: 10px
+  .container>h2
+    margin-top: 15px
+    font: 100 36px/40px $accent-font
+  .wrapper
+    justify-content: space-around
+    flex-wrap: wrap
+  h2
+    color: #000000
+  .red
+    color: $accent-color
+.s10_card_wrap
+  margin: 20px 0
+  >:nth-child(1),>:nth-child(2)
+    .s10card_img .s10ci_text_block
+      left: 50%
+.s10card_img
+  position: relative
+  width: 169px
+  height: 110px
+  display: inline-block
+  background-size: 100%
+  background-position: center
+  transition: all .3s ease
+  &:hover
+    cursor: pointer
+    box-shadow: 0 0 12px 2px rgba(255, 0, 244, 0.6)
+    .s10ci_text_block
+      opacity: 1
+      visibility: visible
+  .s10ci_text_block
+    border-radius: 15px
+    transition: all .6s ease
+    bottom: 100%
+    right: 50%
+    opacity: 0
+    visibility: hidden
+    padding: 15px 10px 20px
+    background-color: #ffffff
+    text-align: center
+    position: absolute
+    border: 1px solid $accent-color
+    width: 600px
+    box-shadow: 0 0 5px 2px rgba(0, 186, 64, .4)
+    z-index: 1
+    .wrapper
+      align-items: center
+      justify-content: space-between
+      >p
+        max-width: 50%
+      .s10tb_left
+        max-width: 50%
+        text-align: left
+        border-right: 2px solid $accent-color
+        padding-right: 20px
+        >p
+          font-size: 12px
+        span
+          font-weight: 600
+      .s10tb_img
+        margin-bottom: 10px
+        span
+          font-size: 13px
+        img
+          width: 50px
+          height: 36px
+        p
+          font-size: 12px
+    img
+      margin: 0 auto
+      width: 169px
+      height: 110px
+    p
+      font-size: 14px
+      color: #90827a
+
+
+.s10_img_wrap
+  max-width: 70px
+  width: 100%
+  display: inline-block
+.s10_video
+  max-width: 482px
+  width: 100%
+  height: 100%
+  iframe
+    max-width: 100%
+    width: 100%
+    height: 290px
+.s10_advantages
+  display: inline-block
+  max-width: 320px
+.s10_item
+  position: relative
+  margin-bottom: 75px
+  max-width: 430px
+  font-size: 18px
+  text-align: center
+  line-height: 22px
+  width: 100%
+  .s10_img_wrap
+    position: absolute
+    left: -70px
+    top: 0
+.s10_text_block
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  margin-top: 30px
+.s10_last_text
+  font-weight: 600
+  text-align: center
+//section11
+.sect_11
+  margin-bottom: 100px
+  .wrapper
+    justify-content: space-around
+  h2
+    margin-bottom: 20px
+
+.s11_background
+  max-width: 174px
+  width: 100%
+  background-size: contain
+  height: 191px
+  margin: 0 auto
+  margin-bottom: 10px
+.s11_item
+  max-width: 390px
+  text-align: center
+  color: #7f7f7f
+  font-size: 18px
+  line-height: 22px
+  margin-bottom: 25px
+  width: 100%
+//section 12
+.sect_12
+  margin-bottom: 100px
+  .wrapper
+    justify-content: space-around
+    flex-wrap: wrap
+  .s12_img_wrap
+    max-width: 190px
+    display: inline-block
+    cursor: pointer
+    width: 100%
+    border: 1px solid transparent
+    margin: 0 10px
+    &:hover
+      border: 1px solid #7F7F7F
+.s12_popup_wrap
+  max-width: 300px
+  width: 100%
+  margin: auto
+  position: relative
+  .mfp-close
+    position: absolute
+    top: 0
+    left: 100%
+    background-color: #dadada
+    opacity: 1
+    font-size: 18px
+    transform: translateY(-100%)
+
+
+
+
+//section 13
+.sect_13
+  margin-bottom: 100px
+  .wrapper
+    justify-content: space-around
+    flex-wrap: wrap
+  h2
+    font: 300 23px/25px arial, sans-serif
+    padding: 15px
+    margin-bottom: 10px
+  form h2
+    font: 600 22px/26px KelsonSansLight,sans-serif
+.sect_13_background
+  background-size: cover
+.s13_form_name
+  font-size: 14px
+  line-height: 14px
+.s13_form_item
+  button
+    display: block
+    margin: auto auto 30px
+    max-width: 250px
+    width: 100%
+    max-height: 30px
+    height: 30px
+    background-color: $accent-color
+    border: none
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.42)
+    text-transform: uppercase
+    color: #ffffff
+    &:hover
+      border: 1px solid greenyellow
+      box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.42), 0px 0px 15px -3px #0000ff
+.s13_img_wrap
+  max-width: 50px
+  display: inline-block
+  width: 100%
+  height: 100%
+.s13_advantages
+  display: inline-block
+.s13_item
+  position: relative
+  margin-bottom: 10px
+  max-width: 430px
+  font-size: 18px
+  line-height: 22px
+  width: 100%
+  .bold
+    font-weight: 700
+  .s13_img_wrap
+    position: absolute
+    left: -60px
+    top: 0
+.s13_text_block
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  margin-top: 30px
+//section 14
+.sect_14
+  margin-bottom: 100px
+  position: relative
+.s14_logo_wrap
+  position: absolute
+  right: 0
+  top: 0
+  transform: translateY(-25%)
+.s14_about
+  display: flex
+.s14_img_block
+  max-width: 255px
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+.s14_img_wrap
+  max-width: 255px
+  width: 100%
+  img
+    border: 2px solid $accent-color
+    border-radius: 15px
+.s14_text_block
+  max-width: 700px
+  width: 100%
+  margin-left: 15px
+  color: #7F7F7F
+  p
+    text-indent: 20px
+    font-size: 16px
+    line-height: 19px
+    margin-bottom: 10px
+    .red
+      color: $accent-color
+
+//section 15
+.sect_15
+  text-align: center
+  margin-bottom: 100px
+
+.s15_head
+  text-decoration: underline
+  font: 22px/24px $default-font
+  margin-bottom: 10px
+  &:hover
+    cursor: pointer
+    margin-top: -1px
+
+.s15_content
+  font: 18px/25px serif
+  border-radius: 10px
+  padding: 0
+  color: #999
+  display: none
+
+.s15_item.active .s15_head
+  color: $accent-color
+
+
+//section 16
+.sect_16
+  h2
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif
+    font-weight: 100
+    font-size: 28px
+    line-height: 24px
+    margin-bottom: 10px
+  form
+    border: none
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    max-width: 100%
+    width: 100%
+    .block
+      max-width: 265px
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      .s16_form_item
+        display: flex
+        background: #F2F2F2
+        margin-bottom: 10px
+        border: 1px #c4c4c4 solid
+        border-radius: 3px
+        margin-right: 10px
+        transition: all .5s ease
+        &:active, &:hover, &:focus
+          background-color: #ffffff
+        i
+          max-height: 100%
+          height: 20px
+          color: #c4c4c4
+          margin: auto auto auto 5px
+        input
+          max-height: 50%
+          height: 45px
+          padding: 0
+        input, textarea
+          outline: none
+          font: normal 16px/18px ArialRegular,sans-serif
+          max-width: 100%
+          width: 100%
+          border: none
+          text-align: left
+          color: #7f7f7f
+          background: none
+          margin: 0
+        textarea
+          max-height: 100%
+          height: 104px
+      .s16_form_button
+        margin: auto 0
+        button
+          background-color: $accent-color
+          display: block
+          position: relative
+          border: 1px solid #0000ff
+          max-width: 100%
+          width: 100%
+          border-radius: 5px
+          color: #ffffff
+          font-size: 18px
+          max-height: 50%
+          height: 45px
+          text-transform: uppercase
+          box-shadow: 6px 6px 12px -3px #7f7f7f
+          transition: all .5s ease
+          i
+            color: #ffffff
+            font-size: 25px
+            position: absolute
+            left: 5px
+            top: 50%
+            transform: translateY(-50%)
+
+          &:hover
+            box-shadow: 6px 6px 12px -3px #7f7f7f, 0px 0px 10px 0px #DE3163
+
+
+
+//section-17
+.sect_17
+  border-top: 2px #B59191 solid
+  .container
+    position: initial
+.sect_17_map
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  .window
+    background-color: #fff
+    box-shadow: 0px 0px 24px rgba(127,127,127,0.5),0px 0px 24px rgba(127,127,127,0.5),6px 6px 8px rgba(0,0,0,0.5)
+    max-width: 363px
+    width: 100%
+    position: absolute
+    z-index: 1
+    right: 130px
+    top: 50%
+    transform: translateY(-50%)
+    h2
+      font: normal 27px/32px $myriad
+      border-bottom: 1px solid #000
+      display: block
+      width: 90%
+      margin: auto
+  .map
+    position: relative
+    z-index: 0
+    max-width: 100%
+    width: 100%
+  .item
+    display: flex
+    margin: 5px 10px
+    ul
+      margin-bottom: 5px
+      line-height: 22px
+      font: normal 18px/22px $default-font
+    .fa
+      font-size: 20px
+      color: $accent-color
+      margin-right: 5px
+    span
+      color: $accent-color
+
+
+//btn_to-top
+.btn-to-top
+  position: fixed
+  bottom: 30px
+  right: 30px
+  i
+    font-size: 50px
+    color: #000
+    &:hover
+      color: $accent-color
+      cursor: pointer
+
 @import "media"
