@@ -80,7 +80,7 @@ $(document).ready(function() {
         }
         $(this).find(".s15_content").slideToggle(500);
     });
-    
+
     //btn_to_top
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
@@ -95,5 +95,42 @@ $(document).ready(function() {
         return false;
     });
 
+    //resize video =================================================================================================
+    // Find all YouTube videos
+    var $allVideos = $("iframe[src^='https://www.youtube.com/']");
+
+    // The element that is fluid width
+    var $fluidEl = $(".s10v_iframe");
+
+    // Figure out and save aspect ratio for each video
+    $allVideos.each(function() {
+
+        $(this)
+            .data('aspectRatio', this.height / this.width)
+
+            // and remove the hard coded width/height
+            .removeAttr('height')
+            .removeAttr('width');
+
+    });
+
+    // When the window is resized
+    $(window).resize(function() {
+
+        var newWidth = $fluidEl.width();
+
+        // Resize all videos according to their own aspect ratio
+        $allVideos.each(function() {
+
+            var $el = $(this);
+            $el
+                .width(newWidth)
+                .height(newWidth * $el.data('aspectRatio'));
+
+        });
+
+        // Kick off one resize to fix all videos on page load
+    }).resize();
+    //resize video =================================================================================================
 
 });

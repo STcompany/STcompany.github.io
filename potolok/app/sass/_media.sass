@@ -25,6 +25,7 @@
       margin: 20px
       width: auto
       transform: none
+      max-width: 100%
   .s13_item .s13_img_wrap
     display: none
   .sect_10
@@ -52,6 +53,11 @@
       max-width: 150px
   .s10_item+.s10_item
     margin-top: 20px
+  .s17_wrap
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    align-items: center
 
 @media only screen and (max-width: 949px)
   .sect_7
@@ -68,6 +74,8 @@
 @media only screen and (max-width: 831px)
   .s10_list
     padding-top: 0
+  .sect_10 .wrapper
+    justify-content: center
 
 @media only screen and (max-width: 800px)
   .sect_13_background::before
@@ -153,6 +161,7 @@
   .sect_10 .container>h2
     margin-top: 15px
     font: 100 30px/35px $accent-font
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
   .s2_phones, .s2_text p
@@ -171,13 +180,13 @@
   .sect_13 h2
     font: 300 18px/21px arial,sans-serif
   .s12_popup_wrap
-    max-width: 250px
     .mfp-close
       left: initial
   .sect_12 .s12_img_wrap
     display: block
     margin: 5px auto
-    max-width: 150px
+  .s12_banner_wrap
+    max-width: 100%
 
 @media only screen and (max-width: 370px)
   .s10_card_wrap
