@@ -355,8 +355,8 @@
   .wrapper
     flex-wrap: wrap
     justify-content: space-between
-  .s7_w2
-    margin-top: 30px
+    flex-wrap: wrap
+
 
 .s7_head
   color: #000000
@@ -365,9 +365,9 @@
   margin-bottom: 10px
 
 .s7_item
-  max-width: 230px
-  width: 100%
   text-align: center
+  margin: 10px
+  flex: 0 0 210px
   p
     margin: 5px 0
     sup
@@ -380,15 +380,15 @@
     line-height: 28px
     font-family: $ultra-font
 .s7i_img
-  max-width: 188px
   margin: 0 auto
-  img
-    transition: all .3s ease
-    width: 100%
-    border: 2px solid $accent-color
-    border-radius: 5px
-    &:hover
-      box-shadow: 0 0 8px 2px rgba(255,99,124,0.5)
+  transition: all .3s ease
+  border: 2px solid $accent-color
+  border-radius: 5px
+  background-position: center
+  background-size: cover
+  height: 158px
+  &:hover
+    box-shadow: 0 0 8px 2px rgba(255,99,124,0.5)
 
 .s7_p_bottom
   position: relative
@@ -535,7 +535,7 @@
     border: 1px solid $accent-color
     width: 600px
     box-shadow: 0 0 5px 2px rgba(0, 186, 64, .4)
-    z-index: 1
+    z-index: 14
     .wrapper
       align-items: center
       justify-content: space-between
@@ -580,6 +580,7 @@
   width: 100%
   .s10v_iframe
     margin-top: 20px
+    margin-bottom: 10px
     iframe
       display: block
 
@@ -781,7 +782,7 @@
 //section 15
 .sect_15
   text-align: center
-  
+
 .s15_head
   text-decoration: underline
   font: 22px/24px $default-font
